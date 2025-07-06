@@ -53,17 +53,28 @@ El proyecto sigue un pipeline de datos claro y modular para garantizar la calida
 
 ---
 
-## 👨‍💻 Equipo de Desarrollo y Ramas de Trabajo
+## 👨‍💻 Equipo de Desarrollo
 
-El proyecto se desarrolla de forma colaborativa siguiendo el flujo de trabajo de GitFlow, con ramas específicas para cada funcionalidad.
+| Integrante | Usuario de GitHub | Rol en el Proyecto |
+| :--- | :--- | :--- |
+| **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
+| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
+| **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
 
-| Integrante | Usuario de GitHub | Rol en el Proyecto | Rama de Trabajo |
-| :--- | :--- | :--- | :--- |
-| **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos | `scraper-redbus` |
-| **[Nombre Compañero 1]** | `[UsuarioGitHub1]` | Backend, Scraper de Clima y Dashboard | `scraper-clima` / `dashboard` |
-| **[Nombre Compañero 2]** | `[UsuarioGitHub2]` | Backend, Scraper de Imágenes y Frontend | `scraper-imagenes` / `frontend` |
+---
 
-La rama `dev` se utiliza como entorno de integración antes de pasar las funcionalidades estables a la rama `main`.
+## Git Workflow: Estrategia de Ramas
+
+Para asegurar una colaboración ordenada y eficiente, el proyecto utiliza un flujo de trabajo basado en ramas de funcionalidad (`feature branches`):
+
+-   🌳 **`main`**: Rama principal. Contiene únicamente las versiones estables y funcionales del proyecto. Solo se fusiona desde `dev` cuando una versión ha sido probada y aprobada por el equipo.
+-   🛠️ **`dev`**: Rama de desarrollo e integración. Es la rama donde se unen todos los avances. Antes de fusionar a `main`, todo debe funcionar correctamente en `dev`.
+-   🚌 **`scraper-redbus`**: Rama dedicada exclusivamente al desarrollo del scraper de RedBus y la lógica de su base de datos. (Responsable: Jhon Villegas).
+-   🌦️ **`scraper-clima`**: Rama para el desarrollo del conector a la API de clima. (Responsable: David Ojeda Valdiviezo).
+-   🖼️ **`scraper-imagenes`**: Rama para el desarrollo del conector a la API de imágenes. (Responsable: Jonnathan Pedraza).
+-   🖥️ **`dashboard`**: Rama dedicada al desarrollo de la interfaz de usuario y las visualizaciones en Streamlit.
+
+El flujo de trabajo es: cada integrante trabaja en su rama asignada, y una vez que su funcionalidad está completa, crea un **Pull Request** hacia la rama `dev` para su revisión e integración.
 
 ---
 
@@ -72,6 +83,7 @@ La rama `dev` se utiliza como entorno de integración antes de pasar las funcion
 🚧 **En Desarrollo.**
 
 - [X] Creación de la estructura base del proyecto y repositorio.
+- [X] Definición de la estrategia de ramas y flujo de trabajo en Git.
 - [ ] Desarrollo de los scrapers individuales.
 - [ ] Diseño del esquema de la base de datos.
 - [ ] Implementación del pipeline de integración de datos.
