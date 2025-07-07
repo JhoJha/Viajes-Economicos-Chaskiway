@@ -58,7 +58,7 @@ El proyecto sigue un pipeline de datos claro y modular para garantizar la calida
 | Integrante | Usuario de GitHub | Rol en el Proyecto |
 | :--- | :--- | :--- |
 | **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
-| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
+| **Jonnathan Jesús Pedraza Laboriano** | `jonnathan2023` | Backend, Scraper de Imágenes y Frontend |
 | **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
 
 ---
