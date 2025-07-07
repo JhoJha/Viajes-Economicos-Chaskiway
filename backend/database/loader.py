@@ -1,5 +1,3 @@
-# Contenido CORREGIDO para: backend/database/loader.py (Versión Grupal)
-
 import sqlite3
 import pandas as pd
 from pathlib import Path
