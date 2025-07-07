@@ -1,6 +1,4 @@
-latitude,longitude,elevation,utc_offset_seconds,timezone,timezone_abbreviation,ciudad
--12.056238,-77.06198,140.0,-18000.0,America/Lima,GMT-5,Lima
-time,temperature_2m (°C),precipitation (mm),,,,Lima
+time,temperature_2m (°C),precipitation (mm),,,,Destino
 2024-07-01T00:00,14.1,0.00,,,,Lima
 2024-07-01T01:00,14.1,0.00,,,,Lima
 2024-07-01T02:00,14.0,0.00,,,,Lima
@@ -745,8 +743,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Lima
 2024-07-31T21:00,15.1,0.00,,,,Lima
 2024-07-31T22:00,14.9,0.00,,,,Lima
 2024-07-31T23:00,14.4,0.00,,,,Lima
--16.414762,-71.58896,2322.0,-18000.0,America/Lima,GMT-5,Arequipa
-time,temperature_2m (°C),precipitation (mm),,,,Arequipa
 2024-07-01T00:00,9.8,0.00,,,,Arequipa
 2024-07-01T01:00,9.3,0.00,,,,Arequipa
 2024-07-01T02:00,9.8,0.00,,,,Arequipa
@@ -1491,8 +1487,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Arequipa
 2024-07-31T21:00,13.5,0.00,,,,Arequipa
 2024-07-31T22:00,12.7,0.00,,,,Arequipa
 2024-07-31T23:00,12.3,0.00,,,,Arequipa
--8.119508,-79.0676,38.0,-18000.0,America/Lima,GMT-5,Trujillo
-time,temperature_2m (°C),precipitation (mm),,,,Trujillo
 2024-07-01T00:00,16.8,0.00,,,,Trujillo
 2024-07-01T01:00,16.7,0.00,,,,Trujillo
 2024-07-01T02:00,16.5,0.00,,,,Trujillo
@@ -2237,8 +2231,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Trujillo
 2024-07-31T21:00,16.8,0.00,,,,Trujillo
 2024-07-31T22:00,16.8,0.00,,,,Trujillo
 2024-07-31T23:00,16.7,0.00,,,,Trujillo
--13.532513,-71.86813,3403.0,-18000.0,America/Lima,GMT-5,Cusco
-time,temperature_2m (°C),precipitation (mm),,,,Cusco
 2024-07-01T00:00,7.7,0.00,,,,Cusco
 2024-07-01T01:00,7.1,0.00,,,,Cusco
 2024-07-01T02:00,6.4,0.00,,,,Cusco
@@ -2983,8 +2975,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Cusco
 2024-07-31T21:00,9.9,0.00,,,,Cusco
 2024-07-31T22:00,9.0,0.00,,,,Cusco
 2024-07-31T23:00,8.0,0.00,,,,Cusco
--5.1669593,-80.63583,33.0,-18000.0,America/Lima,GMT-5,Piura
-time,temperature_2m (°C),precipitation (mm),,,,Piura
 2024-07-01T00:00,19.6,0.00,,,,Piura
 2024-07-01T01:00,19.1,0.00,,,,Piura
 2024-07-01T02:00,18.8,0.00,,,,Piura
@@ -3729,8 +3719,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Piura
 2024-07-31T21:00,20.6,0.00,,,,Piura
 2024-07-31T22:00,20.0,0.00,,,,Piura
 2024-07-31T23:00,19.3,0.00,,,,Piura
--12.056238,-75.28302,3257.0,-18000.0,America/Lima,GMT-5,Huancayo
-time,temperature_2m (°C),precipitation (mm),,,,Huancayo
 2024-07-01T00:00,8.6,0.00,,,,Huancayo
 2024-07-01T01:00,7.7,0.00,,,,Huancayo
 2024-07-01T02:00,6.9,0.00,,,,Huancayo
@@ -4475,8 +4463,6 @@ time,temperature_2m (°C),precipitation (mm),,,,Huancayo
 2024-07-31T21:00,13.5,0.00,,,,Huancayo
 2024-07-31T22:00,12.1,0.00,,,,Huancayo
 2024-07-31T23:00,10.4,0.00,,,,Huancayo
--9.525483,-77.545685,3051.0,-18000.0,America/Lima,GMT-5,Huaraz
-time,temperature_2m (°C),precipitation (mm),,,,Huaraz
 2024-07-01T00:00,12.9,0.00,,,,Huaraz
 2024-07-01T01:00,12.5,0.00,,,,Huaraz
 2024-07-01T02:00,12.1,0.00,,,,Huaraz

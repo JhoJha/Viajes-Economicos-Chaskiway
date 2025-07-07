@@ -1,4 +1,4 @@
-# Contenido para: backend/database/schema.py (Versión Grupal)
+# backend/database/schema.py (Versión Final Integrada)
 
 import sqlite3
 import logging
@@ -8,8 +8,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
 def create_database(db_path="data/processed/viajes_grupales.db"):
     """
-    Crea una base de datos simple con una sola tabla para el proyecto.
-    Esta tabla contendrá los datos ya combinados de todas las fuentes.
+    Crea la base de datos y la tabla final del proyecto con el esquema completo.
     """
     db_path = Path(db_path)
     db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -29,10 +28,8 @@ def create_database(db_path="data/processed/viajes_grupales.db"):
             precio_min REAL,
             asientos_disponibles INTEGER,
             rating_empresa REAL,
-            
-            -- Columnas para los datos de tus compañeros
             temperatura_promedio REAL,
-            clima_descripcion TEXT,
+            categoria_clima TEXT,
             url_imagen_destino TEXT,
 
             UNIQUE(origen, destino, fecha_viaje, empresa, precio_min)
@@ -40,7 +37,7 @@ def create_database(db_path="data/processed/viajes_grupales.db"):
         """)
         
         conn.commit()
-        logging.info(f"Base de datos '{db_path}' y tabla 'viajes_combinados' verificadas/creadas.")
+        logging.info(f"Base de datos '{db_path}' y tabla 'viajes_combinados' verificadas/creadas con el esquema final.")
     except sqlite3.Error as e:
         logging.error(f"Error al crear la base de datos: {e}")
     finally:
@@ -48,5 +45,4 @@ def create_database(db_path="data/processed/viajes_grupales.db"):
             conn.close()
 
 if __name__ == "__main__":
-    # Para que puedas probar este script por separado
     create_database()
