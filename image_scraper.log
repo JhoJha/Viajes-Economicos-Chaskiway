@@ -1,0 +1,834 @@
+2025-07-06 19:08:41,394 - INFO - Starting image collection process
+2025-07-06 19:08:41,410 - INFO - Database created successfully
+2025-07-06 19:08:41,410 - INFO - 
+==================================================
+Processing department: Departamento de Amazonas (Perú)
+==================================================
+2025-07-06 19:08:41,410 - INFO - Fetching images for: Departamento de Amazonas (Perú)
+2025-07-06 19:08:41,864 - INFO - Found 32 potential images for Departamento de Amazonas (Perú)
+2025-07-06 19:08:42,314 - INFO - Retrieved metadata for: File:Camp de futbol de Leimebamba des de les escales que pugen al Museu02.jpg
+2025-07-06 19:08:42,334 - INFO - Saved image to DB: Camp de futbol de Leimebamba des de les escales que pugen al Museu02.jpg
+2025-07-06 19:08:42,805 - INFO - Retrieved metadata for: File:Carretera direcció a Pedro Ruiz en el trencant que va a San Pedro de Valera.jpg
+2025-07-06 19:08:42,832 - INFO - Saved image to DB: Carretera direcció a Pedro Ruiz en el trencant que va a San Pedro de Valera.jpg
+2025-07-06 19:08:43,281 - INFO - Retrieved metadata for: File:Chachapoyas.jpg
+2025-07-06 19:08:43,301 - INFO - Saved image to DB: Chachapoyas.jpg
+2025-07-06 19:08:43,724 - INFO - Retrieved metadata for: File:Cuy Laurel P1016708mod.jpg
+2025-07-06 19:08:43,750 - INFO - Saved image to DB: Cuy Laurel P1016708mod.jpg
+2025-07-06 19:08:44,185 - INFO - Retrieved metadata for: File:Departamento de Amazonas.png
+2025-07-06 19:08:44,211 - INFO - Saved image to DB: Departamento de Amazonas.png
+2025-07-06 19:08:44,669 - INFO - Retrieved metadata for: File:El Tingo.jpg
+2025-07-06 19:08:44,684 - INFO - Saved image to DB: El Tingo.jpg
+2025-07-06 19:08:45,116 - INFO - Retrieved metadata for: File:Flor del jardí del museu de Leimebamba02.jpg
+2025-07-06 19:08:45,135 - INFO - Saved image to DB: Flor del jardí del museu de Leimebamba02.jpg
+2025-07-06 19:08:45,596 - INFO - Retrieved metadata for: File:Fuerza popular.jpg
+2025-07-06 19:08:45,619 - INFO - Saved image to DB: Fuerza popular.jpg
+2025-07-06 19:08:46,058 - INFO - Retrieved metadata for: File:Gocta.jpg
+2025-07-06 19:08:46,083 - INFO - Saved image to DB: Gocta.jpg
+2025-07-06 19:08:46,544 - INFO - Retrieved metadata for: File:Kuelap04.jpg
+2025-07-06 19:08:46,554 - INFO - Saved image to DB: Kuelap04.jpg
+2025-07-06 19:08:46,974 - INFO - Retrieved metadata for: File:Marañón River in Amazonas Region.jpg
+2025-07-06 19:08:46,989 - INFO - Saved image to DB: Marañón River in Amazonas Region.jpg
+2025-07-06 19:08:47,444 - INFO - Retrieved metadata for: File:Muro d'una casa de Kuelap amb la decoració típica en forma romboidal de la cultura Chachapoyas.jpg
+2025-07-06 19:08:47,460 - INFO - Saved image to DB: Muro d'una casa de Kuelap amb la decoració típica en forma romboidal de la cultura Chachapoyas.jpg
+2025-07-06 19:08:47,874 - INFO - Retrieved metadata for: File:Part dels jardins del museu de Leimebamba.jpg
+2025-07-06 19:08:47,892 - INFO - Saved image to DB: Part dels jardins del museu de Leimebamba.jpg
+2025-07-06 19:08:48,314 - INFO - Retrieved metadata for: File:Riu Utcubumba entre Chachapoyas i Leimebamba04.jpg
+2025-07-06 19:08:48,324 - INFO - Saved image to DB: Riu Utcubumba entre Chachapoyas i Leimebamba04.jpg
+2025-07-06 19:08:48,754 - INFO - Retrieved metadata for: File:Ruïnes de Kuelap amb el paisatge.jpg
+2025-07-06 19:08:48,769 - INFO - Saved image to DB: Ruïnes de Kuelap amb el paisatge.jpg
+2025-07-06 19:08:49,215 - INFO - Retrieved metadata for: File:Segona caiguda del Gocta03.jpg
+2025-07-06 19:08:49,237 - INFO - Saved image to DB: Segona caiguda del Gocta03.jpg
+2025-07-06 19:08:49,715 - INFO - Retrieved metadata for: File:Teleférico Kuelap8.JPG
+2025-07-06 19:08:49,733 - INFO - Saved image to DB: Teleférico Kuelap8.JPG
+2025-07-06 19:08:50,150 - INFO - Retrieved metadata for: File:Terminal de l'Aeropuerto de Chachapoyas des de les pistes.jpg
+2025-07-06 19:08:50,174 - INFO - Saved image to DB: Terminal de l'Aeropuerto de Chachapoyas des de les pistes.jpg
+2025-07-06 19:08:50,712 - INFO - Retrieved metadata for: File:Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas Campus.jpg
+2025-07-06 19:08:50,754 - INFO - Saved image to DB: Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas Campus.jpg
+2025-07-06 19:08:51,187 - INFO - Retrieved metadata for: File:Utcubamba.jpg
+2025-07-06 19:08:51,204 - INFO - Saved image to DB: Utcubamba.jpg
+2025-07-06 19:08:51,204 - INFO - Saved 20 images for Departamento de Amazonas (Perú)
+2025-07-06 19:08:51,209 - INFO - 
+==================================================
+Processing department: Departamento de Áncash
+==================================================
+2025-07-06 19:08:51,209 - INFO - Fetching images for: Departamento de Áncash
+2025-07-06 19:08:51,634 - INFO - Found 50 potential images for Departamento de Áncash
+2025-07-06 19:08:52,104 - INFO - Retrieved metadata for: File:14-Pan-American Highway (Peru)-nX-11.jpg
+2025-07-06 19:08:52,124 - INFO - Saved image to DB: 14-Pan-American Highway (Peru)-nX-11.jpg
+2025-07-06 19:08:52,580 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:08:52,598 - INFO - Saved image to DB: Acción Popular.png
+2025-07-06 19:08:53,019 - INFO - Retrieved metadata for: File:AeropuertoHuaraz.JPG
+2025-07-06 19:08:53,034 - INFO - Saved image to DB: AeropuertoHuaraz.JPG
+2025-07-06 19:08:53,474 - INFO - Retrieved metadata for: File:Alpamayo.jpg
+2025-07-06 19:08:53,504 - INFO - Saved image to DB: Alpamayo.jpg
+2025-07-06 19:08:53,924 - INFO - Retrieved metadata for: File:An-107-Yanarraju.jpg
+2025-07-06 19:08:53,948 - INFO - Saved image to DB: An-107-Yanarraju.jpg
+2025-07-06 19:08:54,375 - INFO - Retrieved metadata for: File:Antamina Mine Tailings Pond.jpg
+2025-07-06 19:08:54,394 - INFO - Saved image to DB: Antamina Mine Tailings Pond.jpg
+2025-07-06 19:08:54,889 - INFO - Retrieved metadata for: File:Arhuay Glacier.jpg
+2025-07-06 19:08:54,906 - INFO - Saved image to DB: Arhuay Glacier.jpg
+2025-07-06 19:08:55,324 - INFO - Retrieved metadata for: File:Artesonraju Glacier.jpg
+2025-07-06 19:08:55,348 - INFO - Saved image to DB: Artesonraju Glacier.jpg
+2025-07-06 19:08:55,772 - INFO - Retrieved metadata for: File:BailarinaAntiChacas.jpg
+2025-07-06 19:08:55,794 - INFO - Saved image to DB: BailarinaAntiChacas.jpg
+2025-07-06 19:08:56,215 - INFO - Retrieved metadata for: File:Balconeschacas.jpg
+2025-07-06 19:08:56,234 - INFO - Saved image to DB: Balconeschacas.jpg
+2025-07-06 19:08:56,684 - INFO - Retrieved metadata for: File:Balneario-Tuquillo.jpg
+2025-07-06 19:08:56,708 - INFO - Saved image to DB: Balneario-Tuquillo.jpg
+2025-07-06 19:08:57,164 - INFO - Retrieved metadata for: File:Batalla de Yungay 1839.jpg
+2025-07-06 19:08:57,180 - INFO - Saved image to DB: Batalla de Yungay 1839.jpg
+2025-07-06 19:08:57,604 - INFO - Retrieved metadata for: File:Beauty of mount Huandoy, Cordillera Blanca, Ancash, Peru.jpg
+2025-07-06 19:08:57,624 - INFO - Saved image to DB: Beauty of mount Huandoy, Cordillera Blanca, Ancash, Peru.jpg
+2025-07-06 19:08:58,074 - INFO - Retrieved metadata for: File:Cabeza clava en su ubicacion original 13122009.JPG
+2025-07-06 19:08:58,092 - INFO - Saved image to DB: Cabeza clava en su ubicacion original 13122009.JPG
+2025-07-06 19:08:58,524 - INFO - Retrieved metadata for: File:Caras escudo.jpg
+2025-07-06 19:08:58,534 - INFO - Saved image to DB: Caras escudo.jpg
+2025-07-06 19:08:59,027 - INFO - Retrieved metadata for: File:Casma-dia.jpg
+2025-07-06 19:08:59,044 - INFO - Saved image to DB: Casma-dia.jpg
+2025-07-06 19:08:59,477 - INFO - Retrieved metadata for: File:Chavin de Huantar El Castillo 06122009.jpg
+2025-07-06 19:08:59,494 - INFO - Saved image to DB: Chavin de Huantar El Castillo 06122009.jpg
+2025-07-06 19:08:59,939 - INFO - Retrieved metadata for: File:Chimbote 2022 07.jpg
+2025-07-06 19:08:59,954 - INFO - Saved image to DB: Chimbote 2022 07.jpg
+2025-07-06 19:09:00,387 - INFO - Retrieved metadata for: File:Chopicalqui2013.jpg
+2025-07-06 19:09:00,405 - INFO - Saved image to DB: Chopicalqui2013.jpg
+2025-07-06 19:09:00,829 - INFO - Retrieved metadata for: File:Colca-condor-c03.jpg
+2025-07-06 19:09:00,847 - INFO - Saved image to DB: Colca-condor-c03.jpg
+2025-07-06 19:09:00,848 - INFO - Saved 20 images for Departamento de Áncash
+2025-07-06 19:09:00,848 - INFO - 
+==================================================
+Processing department: Departamento de Apurímac
+==================================================
+2025-07-06 19:09:00,848 - INFO - Fetching images for: Departamento de Apurímac
+2025-07-06 19:09:01,269 - INFO - Found 30 potential images for Departamento de Apurímac
+2025-07-06 19:09:01,706 - INFO - Retrieved metadata for: File:Abancay Province, Peru - panoramio.jpg
+2025-07-06 19:09:01,756 - INFO - Saved image to DB: Abancay Province, Peru - panoramio.jpg
+2025-07-06 19:09:02,174 - INFO - Retrieved metadata for: File:Airport Andahuaylas Peru.jpg
+2025-07-06 19:09:02,194 - INFO - Saved image to DB: Airport Andahuaylas Peru.jpg
+2025-07-06 19:09:02,622 - INFO - Retrieved metadata for: File:Andahuaylas Central Plaza.jpg
+2025-07-06 19:09:02,634 - INFO - Saved image to DB: Andahuaylas Central Plaza.jpg
+2025-07-06 19:09:03,105 - INFO - Retrieved metadata for: File:Apurimac.Cachora.JPG
+2025-07-06 19:09:03,124 - INFO - Saved image to DB: Apurimac.Cachora.JPG
+2025-07-06 19:09:03,567 - INFO - Retrieved metadata for: File:Departamento de Apurimac.png
+2025-07-06 19:09:03,584 - INFO - Saved image to DB: Departamento de Apurimac.png
+2025-07-06 19:09:04,065 - INFO - Retrieved metadata for: File:Escudo Arequipa Perú.png
+2025-07-06 19:09:04,084 - INFO - Saved image to DB: Escudo Arequipa Perú.png
+2025-07-06 19:09:04,517 - INFO - Retrieved metadata for: File:Escudo de Cusco.png
+2025-07-06 19:09:04,534 - INFO - Saved image to DB: Escudo de Cusco.png
+2025-07-06 19:09:04,969 - INFO - Retrieved metadata for: File:Mina Las Bambas2.jpg
+2025-07-06 19:09:04,984 - INFO - Saved image to DB: Mina Las Bambas2.jpg
+2025-07-06 19:09:05,398 - INFO - Retrieved metadata for: File:Pacucha.jpg
+2025-07-06 19:09:05,422 - INFO - Saved image to DB: Pacucha.jpg
+2025-07-06 19:09:05,853 - INFO - Retrieved metadata for: File:Pacucha lagoon - Andahuaylas.jpg
+2025-07-06 19:09:05,874 - INFO - Saved image to DB: Pacucha lagoon - Andahuaylas.jpg
+2025-07-06 19:09:06,315 - INFO - Retrieved metadata for: File:Pasacalle Carnavales Abancay.jpg
+2025-07-06 19:09:06,339 - INFO - Saved image to DB: Pasacalle Carnavales Abancay.jpg
+2025-07-06 19:09:06,754 - INFO - Retrieved metadata for: File:Piedradesaywite.JPG
+2025-07-06 19:09:06,776 - INFO - Saved image to DB: Piedradesaywite.JPG
+2025-07-06 19:09:07,234 - INFO - Retrieved metadata for: File:Plaza de Armas de Abancay.JPG
+2025-07-06 19:09:07,254 - INFO - Saved image to DB: Plaza de Armas de Abancay.JPG
+2025-07-06 19:09:07,718 - INFO - Retrieved metadata for: File:Quinua.JPG
+2025-07-06 19:09:07,734 - INFO - Saved image to DB: Quinua.JPG
+2025-07-06 19:09:08,154 - INFO - Retrieved metadata for: File:Rio apurimac.jpg
+2025-07-06 19:09:08,180 - INFO - Saved image to DB: Rio apurimac.jpg
+2025-07-06 19:09:08,605 - INFO - Retrieved metadata for: File:Sondor Archaeological site - overview.jpg
+2025-07-06 19:09:08,617 - INFO - Saved image to DB: Sondor Archaeological site - overview.jpg
+2025-07-06 19:09:09,055 - INFO - Retrieved metadata for: File:Sondor Archaeological site - walls.jpg
+2025-07-06 19:09:09,070 - INFO - Saved image to DB: Sondor Archaeological site - walls.jpg
+2025-07-06 19:09:09,508 - INFO - Retrieved metadata for: File:Uspaccocha entrada.JPG
+2025-07-06 19:09:09,529 - INFO - Saved image to DB: Uspaccocha entrada.JPG
+2025-07-06 19:09:09,954 - INFO - Retrieved metadata for: File:Uspaccocha nevado.jpg
+2025-07-06 19:09:09,974 - INFO - Saved image to DB: Uspaccocha nevado.jpg
+2025-07-06 19:09:09,974 - INFO - Saved 19 images for Departamento de Apurímac
+2025-07-06 19:09:09,977 - INFO - 
+==================================================
+Processing department: Departamento de Arequipa
+==================================================
+2025-07-06 19:09:09,979 - INFO - Fetching images for: Departamento de Arequipa
+2025-07-06 19:09:10,384 - INFO - Found 43 potential images for Departamento de Arequipa
+2025-07-06 19:09:10,816 - INFO - Retrieved metadata for: File:600px Amaranto2.png
+2025-07-06 19:09:10,832 - INFO - Saved image to DB: 600px Amaranto2.png
+2025-07-06 19:09:11,267 - INFO - Retrieved metadata for: File:600px Celeste.png
+2025-07-06 19:09:11,283 - INFO - Saved image to DB: 600px Celeste.png
+2025-07-06 19:09:11,704 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:09:12,117 - INFO - Retrieved metadata for: File:Arequipac.jpg
+2025-07-06 19:09:12,124 - INFO - Saved image to DB: Arequipac.jpg
+2025-07-06 19:09:12,559 - INFO - Retrieved metadata for: File:Bianco e Blu.png
+2025-07-06 19:09:12,576 - INFO - Saved image to DB: Bianco e Blu.png
+2025-07-06 19:09:13,014 - INFO - Retrieved metadata for: File:Catarindo.JPG
+2025-07-06 19:09:13,034 - INFO - Saved image to DB: Catarindo.JPG
+2025-07-06 19:09:13,494 - INFO - Retrieved metadata for: File:Catedral Arequipa, Peru.jpg
+2025-07-06 19:09:13,517 - INFO - Saved image to DB: Catedral Arequipa, Peru.jpg
+2025-07-06 19:09:13,956 - INFO - Retrieved metadata for: File:Cañon del Colca, Arequipa.jpg
+2025-07-06 19:09:13,974 - INFO - Saved image to DB: Cañon del Colca, Arequipa.jpg
+2025-07-06 19:09:14,434 - INFO - Retrieved metadata for: File:Colca Canyon.jpg
+2025-07-06 19:09:14,452 - INFO - Saved image to DB: Colca Canyon.jpg
+2025-07-06 19:09:14,884 - INFO - Retrieved metadata for: File:División política del Departamento de Arequipa.png
+2025-07-06 19:09:14,901 - INFO - Saved image to DB: División política del Departamento de Arequipa.png
+2025-07-06 19:09:15,321 - INFO - Retrieved metadata for: File:Giallo e Nero (Strisce).png
+2025-07-06 19:09:15,337 - INFO - Saved image to DB: Giallo e Nero (Strisce).png
+2025-07-06 19:09:15,780 - INFO - Retrieved metadata for: File:LaPuntadeBombon05.JPG
+2025-07-06 19:09:15,797 - INFO - Saved image to DB: LaPuntadeBombon05.JPG
+2025-07-06 19:09:16,239 - INFO - Retrieved metadata for: File:La Punta de Bombon 38.JPG
+2025-07-06 19:09:16,250 - INFO - Saved image to DB: La Punta de Bombon 38.JPG
+2025-07-06 19:09:16,705 - INFO - Retrieved metadata for: File:Mollendo.jpg
+2025-07-06 19:09:16,723 - INFO - Saved image to DB: Mollendo.jpg
+2025-07-06 19:09:17,144 - INFO - Retrieved metadata for: File:PROV AREQUIPA.png
+2025-07-06 19:09:17,165 - INFO - Saved image to DB: PROV AREQUIPA.png
+2025-07-06 19:09:17,614 - INFO - Retrieved metadata for: File:PROV CAMANA.png
+2025-07-06 19:09:17,634 - INFO - Saved image to DB: PROV CAMANA.png
+2025-07-06 19:09:18,054 - INFO - Retrieved metadata for: File:PROV CARAVELI.png
+2025-07-06 19:09:18,081 - INFO - Saved image to DB: PROV CARAVELI.png
+2025-07-06 19:09:18,494 - INFO - Retrieved metadata for: File:PROV CASTILLA.png
+2025-07-06 19:09:18,516 - INFO - Saved image to DB: PROV CASTILLA.png
+2025-07-06 19:09:18,955 - INFO - Retrieved metadata for: File:PROV CAYLLOMA.png
+2025-07-06 19:09:18,972 - INFO - Saved image to DB: PROV CAYLLOMA.png
+2025-07-06 19:09:19,394 - INFO - Retrieved metadata for: File:PROV CONDESUYOS.png
+2025-07-06 19:09:19,414 - INFO - Saved image to DB: PROV CONDESUYOS.png
+2025-07-06 19:09:19,414 - INFO - Saved 19 images for Departamento de Arequipa
+2025-07-06 19:09:19,414 - INFO - 
+==================================================
+Processing department: Departamento de Ayacucho
+==================================================
+2025-07-06 19:09:19,414 - INFO - Fetching images for: Departamento de Ayacucho
+2025-07-06 19:09:19,832 - INFO - Found 15 potential images for Departamento de Ayacucho
+2025-07-06 19:09:20,254 - INFO - Retrieved metadata for: File:Ayacucho Region Peru - Altiplano2.jpg
+2025-07-06 19:09:20,274 - INFO - Saved image to DB: Ayacucho Region Peru - Altiplano2.jpg
+2025-07-06 19:09:20,744 - INFO - Retrieved metadata for: File:Ayacucho church by night.jpg
+2025-07-06 19:09:20,764 - INFO - Saved image to DB: Ayacucho church by night.jpg
+2025-07-06 19:09:21,190 - INFO - Retrieved metadata for: File:División Politica de Ayacucho.jpg
+2025-07-06 19:09:21,208 - INFO - Saved image to DB: División Politica de Ayacucho.jpg
+2025-07-06 19:09:21,625 - INFO - Retrieved metadata for: File:Obelisk Battle of Ayacucho and Sucre MC.jpg
+2025-07-06 19:09:21,644 - INFO - Saved image to DB: Obelisk Battle of Ayacucho and Sucre MC.jpg
+2025-07-06 19:09:22,064 - INFO - Retrieved metadata for: File:Pampa de la Quinua.jpg
+2025-07-06 19:09:22,074 - INFO - Saved image to DB: Pampa de la Quinua.jpg
+2025-07-06 19:09:22,540 - INFO - Retrieved metadata for: File:Willkawaman cathedral.jpg
+2025-07-06 19:09:22,556 - INFO - Saved image to DB: Willkawaman cathedral.jpg
+2025-07-06 19:09:22,560 - INFO - Saved 6 images for Departamento de Ayacucho
+2025-07-06 19:09:22,561 - INFO - 
+==================================================
+Processing department: Departamento de Cajamarca
+==================================================
+2025-07-06 19:09:22,562 - INFO - Fetching images for: Departamento de Cajamarca
+2025-07-06 19:09:22,974 - INFO - Found 38 potential images for Departamento de Cajamarca
+2025-07-06 19:09:23,404 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:09:23,864 - INFO - Retrieved metadata for: File:Avenida Atahualpa.jpg
+2025-07-06 19:09:23,901 - INFO - Saved image to DB: Avenida Atahualpa.jpg
+2025-07-06 19:09:24,316 - INFO - Retrieved metadata for: File:Baños del Inca-5 Cajamarca.JPG
+2025-07-06 19:09:24,334 - INFO - Saved image to DB: Baños del Inca-5 Cajamarca.JPG
+2025-07-06 19:09:24,766 - INFO - Retrieved metadata for: File:Bosque de piedras del Cumbemayo 01.jpg
+2025-07-06 19:09:24,790 - INFO - Saved image to DB: Bosque de piedras del Cumbemayo 01.jpg
+2025-07-06 19:09:25,216 - INFO - Retrieved metadata for: File:Cerro de Apolonia VistaCajamarca.JPG
+2025-07-06 19:09:25,234 - INFO - Saved image to DB: Cerro de Apolonia VistaCajamarca.JPG
+2025-07-06 19:09:25,656 - INFO - Retrieved metadata for: File:Cristo Redentor - Celendin.jpg
+2025-07-06 19:09:25,675 - INFO - Saved image to DB: Cristo Redentor - Celendin.jpg
+2025-07-06 19:09:26,099 - INFO - Retrieved metadata for: File:Cutervo National Park 1.jpg
+2025-07-06 19:09:26,119 - INFO - Saved image to DB: Cutervo National Park 1.jpg
+2025-07-06 19:09:26,549 - INFO - Retrieved metadata for: File:DiqueRejo.jpg
+2025-07-06 19:09:26,564 - INFO - Saved image to DB: DiqueRejo.jpg
+2025-07-06 19:09:27,026 - INFO - Retrieved metadata for: File:Espiral-montegrande-jaen.jpg
+2025-07-06 19:09:27,043 - INFO - Saved image to DB: Espiral-montegrande-jaen.jpg
+2025-07-06 19:09:27,498 - INFO - Retrieved metadata for: File:Forests at Cutervo National Park.jpg
+2025-07-06 19:09:27,516 - INFO - Saved image to DB: Forests at Cutervo National Park.jpg
+2025-07-06 19:09:27,934 - INFO - Retrieved metadata for: File:Grades des de la plataforma principal de Kuntur Wasi amb el monòlit principal a l'esquerra.jpg
+2025-07-06 19:09:27,956 - INFO - Saved image to DB: Grades des de la plataforma principal de Kuntur Wasi amb el monòlit principal a l'esquerra.jpg
+2025-07-06 19:09:28,384 - INFO - Retrieved metadata for: File:Himno de la Región Cajamarca.ogg
+2025-07-06 19:09:28,399 - INFO - Saved image to DB: Himno de la Región Cajamarca.ogg
+2025-07-06 19:09:28,814 - INFO - Retrieved metadata for: File:Iglesia Catedral de Jaén.jpg
+2025-07-06 19:09:28,829 - INFO - Saved image to DB: Iglesia Catedral de Jaén.jpg
+2025-07-06 19:09:29,254 - INFO - Retrieved metadata for: File:Portal de Bienvenida - Tembladera.jpg
+2025-07-06 19:09:29,272 - INFO - Saved image to DB: Portal de Bienvenida - Tembladera.jpg
+2025-07-06 19:09:29,686 - INFO - Retrieved metadata for: File:Puerta Inca del Cuarto del Rescate - Cajamarca.jpg
+2025-07-06 19:09:29,704 - INFO - Saved image to DB: Puerta Inca del Cuarto del Rescate - Cajamarca.jpg
+2025-07-06 19:09:30,166 - INFO - Retrieved metadata for: File:Puerto Ciruelo.jpeg
+2025-07-06 19:09:30,191 - INFO - Saved image to DB: Puerto Ciruelo.jpeg
+2025-07-06 19:09:30,605 - INFO - Retrieved metadata for: File:Restes de Kuntur Wasi03.jpg
+2025-07-06 19:09:30,624 - INFO - Saved image to DB: Restes de Kuntur Wasi03.jpg
+2025-07-06 19:09:31,050 - INFO - Retrieved metadata for: File:Revegetada.jpg
+2025-07-06 19:09:31,064 - INFO - Saved image to DB: Revegetada.jpg
+2025-07-06 19:09:31,485 - INFO - Retrieved metadata for: File:Siembras de maíz en Vallicopampa.jpg
+2025-07-06 19:09:31,514 - INFO - Saved image to DB: Siembras de maíz en Vallicopampa.jpg
+2025-07-06 19:09:31,517 - INFO - Saved 18 images for Departamento de Cajamarca
+2025-07-06 19:09:31,518 - INFO - 
+==================================================
+Processing department: Provincia Constitucional del Callao
+==================================================
+2025-07-06 19:09:31,519 - INFO - Fetching images for: Provincia Constitucional del Callao
+2025-07-06 19:09:31,934 - INFO - Found 0 potential images for Provincia Constitucional del Callao
+2025-07-06 19:09:31,934 - WARNING - No valid images found for Provincia Constitucional del Callao
+2025-07-06 19:09:31,934 - INFO - 
+==================================================
+Processing department: Departamento de Cusco
+==================================================
+2025-07-06 19:09:31,934 - INFO - Fetching images for: Departamento de Cusco
+2025-07-06 19:09:32,390 - INFO - Found 0 potential images for Departamento de Cusco
+2025-07-06 19:09:32,394 - WARNING - No valid images found for Departamento de Cusco
+2025-07-06 19:09:32,395 - INFO - 
+==================================================
+Processing department: Departamento de Huancavelica
+==================================================
+2025-07-06 19:09:32,396 - INFO - Fetching images for: Departamento de Huancavelica
+2025-07-06 19:09:32,804 - INFO - Found 25 potential images for Departamento de Huancavelica
+2025-07-06 19:09:33,255 - INFO - Retrieved metadata for: File:385612788 94ecd970ef.jpg
+2025-07-06 19:09:33,296 - INFO - Saved image to DB: 385612788 94ecd970ef.jpg
+2025-07-06 19:09:33,724 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:09:34,204 - INFO - Retrieved metadata for: File:Alrededores de Huancavelica,.jpg
+2025-07-06 19:09:34,225 - INFO - Saved image to DB: Alrededores de Huancavelica,.jpg
+2025-07-06 19:09:34,670 - INFO - Retrieved metadata for: File:Catedral san antonio Huancavelica.PNG
+2025-07-06 19:09:34,686 - INFO - Saved image to DB: Catedral san antonio Huancavelica.PNG
+2025-07-06 19:09:35,155 - INFO - Retrieved metadata for: File:Crianza de ganado ovino.jpg
+2025-07-06 19:09:35,174 - INFO - Saved image to DB: Crianza de ganado ovino.jpg
+2025-07-06 19:09:35,588 - INFO - Retrieved metadata for: File:Danza tipica de carnaval.JPG
+2025-07-06 19:09:35,608 - INFO - Saved image to DB: Danza tipica de carnaval.JPG
+2025-07-06 19:09:36,029 - INFO - Retrieved metadata for: File:Huancavelica, baile regional.jpg
+2025-07-06 19:09:36,054 - INFO - Saved image to DB: Huancavelica, baile regional.jpg
+2025-07-06 19:09:36,474 - INFO - Retrieved metadata for: File:Huancavelica station motor31 2007 front.jpg
+2025-07-06 19:09:36,488 - INFO - Saved image to DB: Huancavelica station motor31 2007 front.jpg
+2025-07-06 19:09:36,952 - INFO - Retrieved metadata for: File:MFPS-D-Huancavelica.jpg
+2025-07-06 19:09:36,973 - INFO - Saved image to DB: MFPS-D-Huancavelica.jpg
+2025-07-06 19:09:37,394 - INFO - Retrieved metadata for: File:PABELLON DE LABOTARIO DE INGENIERIA ZOOTECNIA- FACULTAD DE CIENCIAS - panoramio.jpg
+2025-07-06 19:09:37,415 - INFO - Saved image to DB: PABELLON DE LABOTARIO DE INGENIERIA ZOOTECNIA- FACULTAD DE CIENCIAS - panoramio.jpg
+2025-07-06 19:09:37,830 - INFO - Retrieved metadata for: File:Pampas tayacaja.jpg
+2025-07-06 19:09:37,851 - INFO - Saved image to DB: Pampas tayacaja.jpg
+2025-07-06 19:09:38,275 - INFO - Retrieved metadata for: File:Peña principal de San Juan de Yanacolpa 03.jpg
+2025-07-06 19:09:38,300 - INFO - Saved image to DB: Peña principal de San Juan de Yanacolpa 03.jpg
+2025-07-06 19:09:38,744 - INFO - Retrieved metadata for: File:Piedras en Huancavelica.jpg
+2025-07-06 19:09:38,767 - INFO - Saved image to DB: Piedras en Huancavelica.jpg
+2025-07-06 19:09:39,276 - INFO - Retrieved metadata for: File:Río Ichu.JPG
+2025-07-06 19:09:39,292 - INFO - Saved image to DB: Río Ichu.JPG
+2025-07-06 19:09:39,734 - INFO - Retrieved metadata for: File:Uchkus Inkañan archeological site Huancavelica.PNG
+2025-07-06 19:09:39,755 - INFO - Saved image to DB: Uchkus Inkañan archeological site Huancavelica.PNG
+2025-07-06 19:09:39,755 - INFO - Saved 14 images for Departamento de Huancavelica
+2025-07-06 19:09:39,755 - INFO - 
+==================================================
+Processing department: Departamento de Huánuco
+==================================================
+2025-07-06 19:09:39,755 - INFO - Fetching images for: Departamento de Huánuco
+2025-07-06 19:09:40,244 - INFO - Found 25 potential images for Departamento de Huánuco
+2025-07-06 19:09:40,694 - INFO - Retrieved metadata for: File:Bella Durmiente TM-Peru-1.jpg
+2025-07-06 19:09:40,714 - INFO - Saved image to DB: Bella Durmiente TM-Peru-1.jpg
+2025-07-06 19:09:41,176 - INFO - Retrieved metadata for: File:Cordillera Huayuash 02552.JPG
+2025-07-06 19:09:41,201 - INFO - Saved image to DB: Cordillera Huayuash 02552.JPG
+2025-07-06 19:09:41,644 - INFO - Retrieved metadata for: File:Cueva de las Lechuzas, al Parc Nacional de Tingo María06.jpg
+2025-07-06 19:09:41,666 - INFO - Saved image to DB: Cueva de las Lechuzas, al Parc Nacional de Tingo María06.jpg
+2025-07-06 19:09:42,154 - INFO - Retrieved metadata for: File:Huánuco Pampa Archaeological site - doorway.jpg
+2025-07-06 19:09:42,177 - INFO - Saved image to DB: Huánuco Pampa Archaeological site - doorway.jpg
+2025-07-06 19:09:42,635 - INFO - Retrieved metadata for: File:Huánuco Plaza.jpg
+2025-07-06 19:09:42,648 - INFO - Saved image to DB: Huánuco Plaza.jpg
+2025-07-06 19:09:43,144 - INFO - Retrieved metadata for: File:Kotosh.jpg
+2025-07-06 19:09:43,162 - INFO - Saved image to DB: Kotosh.jpg
+2025-07-06 19:09:43,665 - INFO - Retrieved metadata for: File:Rio Pachitea, Nueva Honoria, region de Ucayali, Peru.JPG
+2025-07-06 19:09:43,674 - INFO - Saved image to DB: Rio Pachitea, Nueva Honoria, region de Ucayali, Peru.JPG
+2025-07-06 19:09:44,102 - INFO - Retrieved metadata for: File:Río Marañón 03296.JPG
+2025-07-06 19:09:44,114 - INFO - Saved image to DB: Río Marañón 03296.JPG
+2025-07-06 19:09:44,545 - INFO - Retrieved metadata for: File:Universidad Nacional Agraria de la Selva.png
+2025-07-06 19:09:44,561 - INFO - Saved image to DB: Universidad Nacional Agraria de la Selva.png
+2025-07-06 19:09:44,994 - INFO - Retrieved metadata for: File:Vistes de Tingo María i el riu Huallaga des de la carretera que condueix a la Cueva de las Lechuzas.jpg
+2025-07-06 19:09:45,012 - INFO - Saved image to DB: Vistes de Tingo María i el riu Huallaga des de la carretera que condueix a la Cueva de las Lechuzas.jpg
+2025-07-06 19:09:45,485 - INFO - Retrieved metadata for: File:Vistes des del Mirador de la Cruz de Tingo María04.jpg
+2025-07-06 19:09:45,504 - INFO - Saved image to DB: Vistes des del Mirador de la Cruz de Tingo María04.jpg
+2025-07-06 19:09:45,925 - INFO - Retrieved metadata for: File:Yerupaja Grande.jpg
+2025-07-06 19:09:45,945 - INFO - Saved image to DB: Yerupaja Grande.jpg
+2025-07-06 19:09:46,372 - INFO - Retrieved metadata for: File:¨Riu Huallaga a Huánuco des del Malecón Alomia Robles02.jpg
+2025-07-06 19:09:46,394 - INFO - Saved image to DB: ¨Riu Huallaga a Huánuco des del Malecón Alomia Robles02.jpg
+2025-07-06 19:09:46,396 - INFO - Saved 13 images for Departamento de Huánuco
+2025-07-06 19:09:46,396 - INFO - 
+==================================================
+Processing department: Departamento de Ica
+==================================================
+2025-07-06 19:09:46,397 - INFO - Fetching images for: Departamento de Ica
+2025-07-06 19:09:46,894 - INFO - Found 29 potential images for Departamento de Ica
+2025-07-06 19:09:47,362 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:09:47,884 - INFO - Retrieved metadata for: File:Chincha guano islands.JPG
+2025-07-06 19:09:47,904 - INFO - Saved image to DB: Chincha guano islands.JPG
+2025-07-06 19:09:48,674 - INFO - Retrieved metadata for: File:Departamento de Ica.png
+2025-07-06 19:09:48,704 - INFO - Saved image to DB: Departamento de Ica.png
+2025-07-06 19:09:49,154 - INFO - Retrieved metadata for: File:Dunas de Ica, Perú, 2015-07-29, DD 16.JPG
+2025-07-06 19:09:49,170 - INFO - Saved image to DB: Dunas de Ica, Perú, 2015-07-29, DD 16.JPG
+2025-07-06 19:09:49,604 - INFO - Retrieved metadata for: File:Islas Ballestas.jpg
+2025-07-06 19:09:49,625 - INFO - Saved image to DB: Islas Ballestas.jpg
+2025-07-06 19:09:50,069 - INFO - Retrieved metadata for: File:Kousek od Nasca - panoramio.jpg
+2025-07-06 19:09:50,088 - INFO - Saved image to DB: Kousek od Nasca - panoramio.jpg
+2025-07-06 19:09:50,524 - INFO - Retrieved metadata for: File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 52.JPG
+2025-07-06 19:09:50,548 - INFO - Saved image to DB: Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 52.JPG
+2025-07-06 19:09:50,989 - INFO - Retrieved metadata for: File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 59.JPG
+2025-07-06 19:09:51,009 - INFO - Saved image to DB: Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 59.JPG
+2025-07-06 19:09:51,534 - INFO - Retrieved metadata for: File:Marcona.jpg
+2025-07-06 19:09:51,554 - INFO - Saved image to DB: Marcona.jpg
+2025-07-06 19:09:51,967 - INFO - Retrieved metadata for: File:Oasis de Huacachina, Ica, Perú, 2015-07-29, DD 23.JPG
+2025-07-06 19:09:51,985 - INFO - Saved image to DB: Oasis de Huacachina, Ica, Perú, 2015-07-29, DD 23.JPG
+2025-07-06 19:09:52,404 - INFO - Retrieved metadata for: File:Oasis de Huacachina, Ica, Perú, 2015-07-29, DD 24-26 PAN.JPG
+2025-07-06 19:09:52,424 - INFO - Saved image to DB: Oasis de Huacachina, Ica, Perú, 2015-07-29, DD 24-26 PAN.JPG
+2025-07-06 19:09:52,877 - INFO - Retrieved metadata for: File:Paisaje cerca de Ica, Perú, 2015-07-29, DD 35.JPG
+2025-07-06 19:09:52,895 - INFO - Saved image to DB: Paisaje cerca de Ica, Perú, 2015-07-29, DD 35.JPG
+2025-07-06 19:09:53,346 - INFO - Retrieved metadata for: File:Paracas National Reserve. Ica, Peru.jpg
+2025-07-06 19:09:53,365 - INFO - Saved image to DB: Paracas National Reserve. Ica, Peru.jpg
+2025-07-06 19:09:53,854 - INFO - Retrieved metadata for: File:Perupelican.jpg
+2025-07-06 19:09:53,883 - INFO - Saved image to DB: Perupelican.jpg
+2025-07-06 19:09:54,316 - INFO - Retrieved metadata for: File:Plaza armas ica noche.jpg
+2025-07-06 19:09:54,334 - INFO - Saved image to DB: Plaza armas ica noche.jpg
+2025-07-06 19:09:54,765 - INFO - Retrieved metadata for: File:Plaza de Armas de Chincha.jpg
+2025-07-06 19:09:54,785 - INFO - Saved image to DB: Plaza de Armas de Chincha.jpg
+2025-07-06 19:09:55,221 - INFO - Retrieved metadata for: File:Puerto de Paracas, Perú, 2015-07-29, DD 09.JPG
+2025-07-06 19:09:55,237 - INFO - Saved image to DB: Puerto de Paracas, Perú, 2015-07-29, DD 09.JPG
+2025-07-06 19:09:55,654 - INFO - Retrieved metadata for: File:San Nicolas Marcona.jpg
+2025-07-06 19:09:55,674 - INFO - Saved image to DB: San Nicolas Marcona.jpg
+2025-07-06 19:09:55,674 - INFO - Saved 17 images for Departamento de Ica
+2025-07-06 19:09:55,674 - INFO - 
+==================================================
+Processing department: Departamento de Junín
+==================================================
+2025-07-06 19:09:55,674 - INFO - Fetching images for: Departamento de Junín
+2025-07-06 19:09:56,083 - INFO - Found 50 potential images for Departamento de Junín
+2025-07-06 19:09:56,496 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:09:57,204 - INFO - Retrieved metadata for: File:Arwaturo-Junin-16.jpg
+2025-07-06 19:09:57,216 - INFO - Saved image to DB: Arwaturo-Junin-16.jpg
+2025-07-06 19:09:57,688 - INFO - Retrieved metadata for: File:BU7A1936 (2).jpg
+2025-07-06 19:09:57,705 - INFO - Saved image to DB: BU7A1936 (2).jpg
+2025-07-06 19:09:58,150 - INFO - Retrieved metadata for: File:Basílica Catedral de Huancayo.jpg
+2025-07-06 19:09:58,168 - INFO - Saved image to DB: Basílica Catedral de Huancayo.jpg
+2025-07-06 19:09:58,578 - INFO - Retrieved metadata for: File:Batalla de Junín.jpg
+2025-07-06 19:09:58,597 - INFO - Saved image to DB: Batalla de Junín.jpg
+2025-07-06 19:09:59,035 - INFO - Retrieved metadata for: File:CONCEPCION 3.jpg
+2025-07-06 19:09:59,054 - INFO - Saved image to DB: CONCEPCION 3.jpg
+2025-07-06 19:09:59,716 - INFO - Retrieved metadata for: File:Cañón de Shucto.jpg
+2025-07-06 19:09:59,738 - INFO - Saved image to DB: Cañón de Shucto.jpg
+2025-07-06 19:10:00,174 - INFO - Retrieved metadata for: File:Cd wanka.png
+2025-07-06 19:10:00,192 - INFO - Saved image to DB: Cd wanka.png
+2025-07-06 19:10:00,630 - INFO - Retrieved metadata for: File:Coliseo Municipal de Huancayo 1.jpg
+2025-07-06 19:10:00,659 - INFO - Saved image to DB: Coliseo Municipal de Huancayo 1.jpg
+2025-07-06 19:10:01,094 - INFO - Retrieved metadata for: File:Damaris invita a la comunidad al I Festival Universitario de Danzas - FEDUCH 0-27 screenshot.png
+2025-07-06 19:10:01,118 - INFO - Saved image to DB: Damaris invita a la comunidad al I Festival Universitario de Danzas - FEDUCH 0-27 screenshot.png
+2025-07-06 19:10:01,564 - INFO - Retrieved metadata for: File:Espacios Perdidos (136092431).jpeg
+2025-07-06 19:10:01,575 - INFO - Saved image to DB: Espacios Perdidos (136092431).jpeg
+2025-07-06 19:10:02,034 - INFO - Retrieved metadata for: File:Glacier Huaytapallana-8.jpg
+2025-07-06 19:10:02,060 - INFO - Saved image to DB: Glacier Huaytapallana-8.jpg
+2025-07-06 19:10:02,495 - INFO - Retrieved metadata for: File:Gobierno Regional Junin en Huancayo Edificio.jpg
+2025-07-06 19:10:02,515 - INFO - Saved image to DB: Gobierno Regional Junin en Huancayo Edificio.jpg
+2025-07-06 19:10:02,955 - INFO - Retrieved metadata for: File:Hojas y fruto de araucaria conmemorativa en la Plaza de Armas de Concepción, Concepción, Junín.jpg
+2025-07-06 19:10:02,974 - INFO - Saved image to DB: Hojas y fruto de araucaria conmemorativa en la Plaza de Armas de Concepción, Concepción, Junín.jpg
+2025-07-06 19:10:03,404 - INFO - Retrieved metadata for: File:Hotel de Turistas de Huancayo.jpg
+2025-07-06 19:10:03,420 - INFO - Saved image to DB: Hotel de Turistas de Huancayo.jpg
+2025-07-06 19:10:03,854 - INFO - Retrieved metadata for: File:Huari Danza.jpg
+2025-07-06 19:10:03,874 - INFO - Saved image to DB: Huari Danza.jpg
+2025-07-06 19:10:04,344 - INFO - Retrieved metadata for: File:Iglesia de la plaza de Jauja..jpg
+2025-07-06 19:10:04,354 - INFO - Saved image to DB: Iglesia de la plaza de Jauja..jpg
+2025-07-06 19:10:04,786 - INFO - Retrieved metadata for: File:La Gruta de Guagapo en Tarma, la mas grande se Sudamerica. - panoramio.jpg
+2025-07-06 19:10:04,807 - INFO - Saved image to DB: La Gruta de Guagapo en Tarma, la mas grande se Sudamerica. - panoramio.jpg
+2025-07-06 19:10:05,274 - INFO - Retrieved metadata for: File:Laguna de paca.jpg
+2025-07-06 19:10:05,285 - INFO - Saved image to DB: Laguna de paca.jpg
+2025-07-06 19:10:05,733 - INFO - Retrieved metadata for: File:Museo Salesiano Vivente Rasetto.jpg
+2025-07-06 19:10:05,744 - INFO - Saved image to DB: Museo Salesiano Vivente Rasetto.jpg
+2025-07-06 19:10:05,750 - INFO - Saved 19 images for Departamento de Junín
+2025-07-06 19:10:05,750 - INFO - 
+==================================================
+Processing department: Departamento de La Libertad
+==================================================
+2025-07-06 19:10:05,750 - INFO - Fetching images for: Departamento de La Libertad
+2025-07-06 19:10:06,205 - INFO - Found 1 potential images for Departamento de La Libertad
+2025-07-06 19:10:06,205 - WARNING - No valid images found for Departamento de La Libertad
+2025-07-06 19:10:06,206 - INFO - 
+==================================================
+Processing department: Departamento de Lambayeque
+==================================================
+2025-07-06 19:10:06,206 - INFO - Fetching images for: Departamento de Lambayeque
+2025-07-06 19:10:06,618 - INFO - Found 46 potential images for Departamento de Lambayeque
+2025-07-06 19:10:07,034 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:10:07,456 - INFO - Retrieved metadata for: File:Arroz con pato a la chiclayana.JPG
+2025-07-06 19:10:07,484 - INFO - Saved image to DB: Arroz con pato a la chiclayana.JPG
+2025-07-06 19:10:07,925 - INFO - Retrieved metadata for: File:Batan Grande 1900.jpg
+2025-07-06 19:10:07,949 - INFO - Saved image to DB: Batan Grande 1900.jpg
+2025-07-06 19:10:08,374 - INFO - Retrieved metadata for: File:Cathedral of Lambayeque.jpg
+2025-07-06 19:10:08,395 - INFO - Saved image to DB: Cathedral of Lambayeque.jpg
+2025-07-06 19:10:08,817 - INFO - Retrieved metadata for: File:Ceremonial knife (tumi), Sican (Lambayeque) culture, Peru north coast, Late Intermediate Period (Middle Sican), 900-1100 AD, gold, silver, turquoise - Dallas Museum of Art - DSC04674.jpg
+2025-07-06 19:10:08,837 - INFO - Saved image to DB: Ceremonial knife (tumi), Sican (Lambayeque) culture, Peru north coast, Late Intermediate Period (Middle Sican), 900-1100 AD, gold, silver, turquoise - Dallas Museum of Art - DSC04674.jpg
+2025-07-06 19:10:09,284 - INFO - Retrieved metadata for: File:Chiclayo-Peru1.jpg
+2025-07-06 19:10:09,300 - INFO - Saved image to DB: Chiclayo-Peru1.jpg
+2025-07-06 19:10:09,739 - INFO - Retrieved metadata for: File:Chiclayo-Peru3.jpg
+2025-07-06 19:10:09,759 - INFO - Saved image to DB: Chiclayo-Peru3.jpg
+2025-07-06 19:10:10,176 - INFO - Retrieved metadata for: File:Chiclayo Airport.JPG
+2025-07-06 19:10:10,201 - INFO - Saved image to DB: Chiclayo Airport.JPG
+2025-07-06 19:10:10,644 - INFO - Retrieved metadata for: File:Chinguimixto.JPG
+2025-07-06 19:10:10,661 - INFO - Saved image to DB: Chinguimixto.JPG
+2025-07-06 19:10:11,105 - INFO - Retrieved metadata for: File:Esc caxamarca.jpg
+2025-07-06 19:10:11,125 - INFO - Saved image to DB: Esc caxamarca.jpg
+2025-07-06 19:10:11,552 - INFO - Retrieved metadata for: File:Escudo Región La Libertad.png
+2025-07-06 19:10:11,574 - INFO - Saved image to DB: Escudo Región La Libertad.png
+2025-07-06 19:10:12,024 - INFO - Retrieved metadata for: File:Espesadochiclayano.jpg
+2025-07-06 19:10:12,045 - INFO - Saved image to DB: Espesadochiclayano.jpg
+2025-07-06 19:10:12,495 - INFO - Retrieved metadata for: File:Frito chiclayano.jpg
+2025-07-06 19:10:12,515 - INFO - Saved image to DB: Frito chiclayano.jpg
+2025-07-06 19:10:12,944 - INFO - Retrieved metadata for: File:Iglesia de Santa Lucía - panorámica de fachada.jpg
+2025-07-06 19:10:12,961 - INFO - Saved image to DB: Iglesia de Santa Lucía - panorámica de fachada.jpg
+2025-07-06 19:10:13,387 - INFO - Retrieved metadata for: File:Kingkong de tres sabores (02).jpg
+2025-07-06 19:10:13,404 - INFO - Saved image to DB: Kingkong de tres sabores (02).jpg
+2025-07-06 19:10:13,855 - INFO - Retrieved metadata for: File:Museo Arqueológico Bruning.jpg
+2025-07-06 19:10:13,873 - INFO - Saved image to DB: Museo Arqueológico Bruning.jpg
+2025-07-06 19:10:14,311 - INFO - Retrieved metadata for: File:Museo Nacional de Sicán - Fachada.jpg
+2025-07-06 19:10:14,330 - INFO - Saved image to DB: Museo Nacional de Sicán - Fachada.jpg
+2025-07-06 19:10:14,765 - INFO - Retrieved metadata for: File:Museo de Sitio Huaca Rajada - Sipán.jpg
+2025-07-06 19:10:14,785 - INFO - Saved image to DB: Museo de Sitio Huaca Rajada - Sipán.jpg
+2025-07-06 19:10:15,429 - INFO - Retrieved metadata for: File:MuseodeSitio Túcume1.JPG
+2025-07-06 19:10:15,474 - INFO - Saved image to DB: MuseodeSitio Túcume1.JPG
+2025-07-06 19:10:15,905 - INFO - Retrieved metadata for: File:Perú · Lambayeque.png
+2025-07-06 19:10:15,925 - INFO - Saved image to DB: Perú · Lambayeque.png
+2025-07-06 19:10:15,926 - INFO - Saved 19 images for Departamento de Lambayeque
+2025-07-06 19:10:15,927 - INFO - 
+==================================================
+Processing department: Departamento de Lima
+==================================================
+2025-07-06 19:10:15,927 - INFO - Fetching images for: Departamento de Lima
+2025-07-06 19:10:16,336 - INFO - Found 19 potential images for Departamento de Lima
+2025-07-06 19:10:16,784 - INFO - Retrieved metadata for: File:Departamento de Lima.png
+2025-07-06 19:10:16,825 - INFO - Saved image to DB: Departamento de Lima.png
+2025-07-06 19:10:17,265 - INFO - Retrieved metadata for: File:Laguna de los siete colores - Canta. Lima.jpg
+2025-07-06 19:10:17,288 - INFO - Saved image to DB: Laguna de los siete colores - Canta. Lima.jpg
+2025-07-06 19:10:17,742 - INFO - Retrieved metadata for: File:Lima Golf Club, San Isidro District.jpg
+2025-07-06 19:10:17,760 - INFO - Saved image to DB: Lima Golf Club, San Isidro District.jpg
+2025-07-06 19:10:18,175 - INFO - Retrieved metadata for: File:Lomas de Lachay.jpg
+2025-07-06 19:10:18,185 - INFO - Saved image to DB: Lomas de Lachay.jpg
+2025-07-06 19:10:18,675 - INFO - Retrieved metadata for: File:Piràmide i plaça de Caral.jpg
+2025-07-06 19:10:18,692 - INFO - Saved image to DB: Piràmide i plaça de Caral.jpg
+2025-07-06 19:10:19,105 - INFO - Retrieved metadata for: File:View from the Summit Yuraccochas I - Ticlio, Huarochiri, Lima, Peru.jpg
+2025-07-06 19:10:19,127 - INFO - Saved image to DB: View from the Summit Yuraccochas I - Ticlio, Huarochiri, Lima, Peru.jpg
+2025-07-06 19:10:19,127 - INFO - Saved 6 images for Departamento de Lima
+2025-07-06 19:10:19,127 - INFO - 
+==================================================
+Processing department: Departamento de Loreto
+==================================================
+2025-07-06 19:10:19,127 - INFO - Fetching images for: Departamento de Loreto
+2025-07-06 19:10:19,555 - INFO - Found 43 potential images for Departamento de Loreto
+2025-07-06 19:10:19,985 - INFO - Retrieved metadata for: File:'Eight Hundred Leagues on the Amazon' by Léon Benett 84.jpg
+2025-07-06 19:10:20,025 - INFO - Saved image to DB: 'Eight Hundred Leagues on the Amazon' by Léon Benett 84.jpg
+2025-07-06 19:10:20,460 - INFO - Retrieved metadata for: File:10 BHP (7181690405).jpg
+2025-07-06 19:10:20,478 - INFO - Saved image to DB: 10 BHP (7181690405).jpg
+2025-07-06 19:10:20,904 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:10:21,354 - INFO - Retrieved metadata for: File:Amazonian rainforest.JPG
+2025-07-06 19:10:21,384 - INFO - Saved image to DB: Amazonian rainforest.JPG
+2025-07-06 19:10:21,825 - INFO - Retrieved metadata for: File:Arapaima gigas at sea world.JPG
+2025-07-06 19:10:21,844 - INFO - Saved image to DB: Arapaima gigas at sea world.JPG
+2025-07-06 19:10:22,299 - INFO - Retrieved metadata for: File:Bubikon02.JPG
+2025-07-06 19:10:22,316 - INFO - Saved image to DB: Bubikon02.JPG
+2025-07-06 19:10:22,789 - INFO - Retrieved metadata for: File:Caballeros y militares de Iquitos.jpg
+2025-07-06 19:10:22,806 - INFO - Saved image to DB: Caballeros y militares de Iquitos.jpg
+2025-07-06 19:10:23,247 - INFO - Retrieved metadata for: File:Citrus limon0.jpg
+2025-07-06 19:10:23,264 - INFO - Saved image to DB: Citrus limon0.jpg
+2025-07-06 19:10:23,722 - INFO - Retrieved metadata for: File:Colossoma macropomum 01.jpg
+2025-07-06 19:10:23,736 - INFO - Saved image to DB: Colossoma macropomum 01.jpg
+2025-07-06 19:10:24,147 - INFO - Retrieved metadata for: File:Departamento de Loreto TeoCastro.png
+2025-07-06 19:10:24,162 - INFO - Saved image to DB: Departamento de Loreto TeoCastro.png
+2025-07-06 19:10:24,587 - INFO - Retrieved metadata for: File:Ecuador-peru-land-claims-01.png
+2025-07-06 19:10:24,605 - INFO - Saved image to DB: Ecuador-peru-land-claims-01.png
+2025-07-06 19:10:25,025 - INFO - Retrieved metadata for: File:Estatua a Ramón Castilla en Iquitos.jpg
+2025-07-06 19:10:25,036 - INFO - Saved image to DB: Estatua a Ramón Castilla en Iquitos.jpg
+2025-07-06 19:10:25,445 - INFO - Retrieved metadata for: File:Gente en Iquitos.JPG
+2025-07-06 19:10:25,461 - INFO - Saved image to DB: Gente en Iquitos.JPG
+2025-07-06 19:10:25,875 - INFO - Retrieved metadata for: File:Gobierno Regional de Loreto.jpg
+2025-07-06 19:10:25,888 - INFO - Saved image to DB: Gobierno Regional de Loreto.jpg
+2025-07-06 19:10:26,318 - INFO - Retrieved metadata for: File:Iquitos desde el aire.jpg
+2025-07-06 19:10:26,335 - INFO - Saved image to DB: Iquitos desde el aire.jpg
+2025-07-06 19:10:26,755 - INFO - Retrieved metadata for: File:Kidney beans.jpg
+2025-07-06 19:10:26,776 - INFO - Saved image to DB: Kidney beans.jpg
+2025-07-06 19:10:27,195 - INFO - Retrieved metadata for: File:Leticia Perú 1932.jpg
+2025-07-06 19:10:27,208 - INFO - Saved image to DB: Leticia Perú 1932.jpg
+2025-07-06 19:10:27,649 - INFO - Retrieved metadata for: File:Maqueta de primeros barcos llegados a Iquitos..JPG
+2025-07-06 19:10:27,669 - INFO - Saved image to DB: Maqueta de primeros barcos llegados a Iquitos..JPG
+2025-07-06 19:10:28,094 - INFO - Retrieved metadata for: File:Mariano Prado.jpg
+2025-07-06 19:10:28,109 - INFO - Saved image to DB: Mariano Prado.jpg
+2025-07-06 19:10:28,521 - INFO - Retrieved metadata for: File:Pizarra de inicial en Bena Jema.JPG
+2025-07-06 19:10:28,538 - INFO - Saved image to DB: Pizarra de inicial en Bena Jema.JPG
+2025-07-06 19:10:28,538 - INFO - Saved 19 images for Departamento de Loreto
+2025-07-06 19:10:28,538 - INFO - 
+==================================================
+Processing department: Departamento de Madre de Dios
+==================================================
+2025-07-06 19:10:28,538 - INFO - Fetching images for: Departamento de Madre de Dios
+2025-07-06 19:10:28,976 - INFO - Found 41 potential images for Departamento de Madre de Dios
+2025-07-06 19:10:29,404 - INFO - Retrieved metadata for: File:AgoutiFeed.jpg
+2025-07-06 19:10:29,438 - INFO - Saved image to DB: AgoutiFeed.jpg
+2025-07-06 19:10:29,885 - INFO - Retrieved metadata for: File:Amazona farinosa -Tambopata National Reserve, Peru-8.jpg
+2025-07-06 19:10:29,899 - INFO - Saved image to DB: Amazona farinosa -Tambopata National Reserve, Peru-8.jpg
+2025-07-06 19:10:30,311 - INFO - Retrieved metadata for: File:Amazonas-Wood-production.jpg
+2025-07-06 19:10:30,326 - INFO - Saved image to DB: Amazonas-Wood-production.jpg
+2025-07-06 19:10:30,745 - INFO - Retrieved metadata for: File:Birds come calling.jpg
+2025-07-06 19:10:30,765 - INFO - Saved image to DB: Birds come calling.jpg
+2025-07-06 19:10:31,290 - INFO - Retrieved metadata for: File:CaimanDepredador.jpg
+2025-07-06 19:10:31,309 - INFO - Saved image to DB: CaimanDepredador.jpg
+2025-07-06 19:10:31,735 - INFO - Retrieved metadata for: File:Caiman negro P Maldonado.jpg
+2025-07-06 19:10:31,755 - INFO - Saved image to DB: Caiman negro P Maldonado.jpg
+2025-07-06 19:10:32,181 - INFO - Retrieved metadata for: File:CapybaraNoche.jpg
+2025-07-06 19:10:32,197 - INFO - Saved image to DB: CapybaraNoche.jpg
+2025-07-06 19:10:32,645 - INFO - Retrieved metadata for: File:Cock-of-the-rock Lodge to Atalaya (23412478849).jpg
+2025-07-06 19:10:32,658 - INFO - Saved image to DB: Cock-of-the-rock Lodge to Atalaya (23412478849).jpg
+2025-07-06 19:10:33,106 - INFO - Retrieved metadata for: File:Cymbilaimus lineatus (Tambopata, Peru).jpg
+2025-07-06 19:10:33,129 - INFO - Saved image to DB: Cymbilaimus lineatus (Tambopata, Peru).jpg
+2025-07-06 19:10:33,556 - INFO - Retrieved metadata for: File:Departamento de Madre de Dios.jpg
+2025-07-06 19:10:33,573 - INFO - Saved image to DB: Departamento de Madre de Dios.jpg
+2025-07-06 19:10:34,049 - INFO - Retrieved metadata for: File:Flickr - ggallice - Treefrog.jpg
+2025-07-06 19:10:34,066 - INFO - Saved image to DB: Flickr - ggallice - Treefrog.jpg
+2025-07-06 19:10:34,482 - INFO - Retrieved metadata for: File:Flora Parque Nacional Manu 04.jpg
+2025-07-06 19:10:34,499 - INFO - Saved image to DB: Flora Parque Nacional Manu 04.jpg
+2025-07-06 19:10:34,933 - INFO - Retrieved metadata for: File:Flora Parque Nacional Manu 17.jpg
+2025-07-06 19:10:34,945 - INFO - Saved image to DB: Flora Parque Nacional Manu 17.jpg
+2025-07-06 19:10:35,365 - INFO - Retrieved metadata for: File:Goldwäscher.jpg
+2025-07-06 19:10:35,380 - INFO - Saved image to DB: Goldwäscher.jpg
+2025-07-06 19:10:35,818 - INFO - Retrieved metadata for: File:Heliodoxa aurescens -near Amazonia Lodge, Manu National Park, Peru-8.jpg
+2025-07-06 19:10:35,835 - INFO - Saved image to DB: Heliodoxa aurescens -near Amazonia Lodge, Manu National Park, Peru-8.jpg
+2025-07-06 19:10:36,269 - INFO - Retrieved metadata for: File:Hydda, kvinna och barn. Mellan Rio Inambari och Rio Tambopata. Madre de Dios. Peru - SMVK - 002518.tif
+2025-07-06 19:10:36,289 - INFO - Saved image to DB: Hydda, kvinna och barn. Mellan Rio Inambari och Rio Tambopata. Madre de Dios. Peru - SMVK - 002518.tif
+2025-07-06 19:10:36,715 - INFO - Retrieved metadata for: File:Hypsiboas punctatus Peru 02.JPG
+2025-07-06 19:10:36,727 - INFO - Saved image to DB: Hypsiboas punctatus Peru 02.JPG
+2025-07-06 19:10:37,145 - INFO - Retrieved metadata for: File:Lago Sandoval 1.JPG
+2025-07-06 19:10:37,167 - INFO - Saved image to DB: Lago Sandoval 1.JPG
+2025-07-06 19:10:37,585 - INFO - Retrieved metadata for: File:Manu riverbank.jpg
+2025-07-06 19:10:37,595 - INFO - Saved image to DB: Manu riverbank.jpg
+2025-07-06 19:10:38,034 - INFO - Retrieved metadata for: File:Momotus momota -Los Amigos Conservation Concession, Madre de Dios, Peru -head-8.jpg
+2025-07-06 19:10:38,053 - INFO - Saved image to DB: Momotus momota -Los Amigos Conservation Concession, Madre de Dios, Peru -head-8.jpg
+2025-07-06 19:10:38,055 - INFO - Saved 20 images for Departamento de Madre de Dios
+2025-07-06 19:10:38,055 - INFO - 
+==================================================
+Processing department: Departamento de Moquegua
+==================================================
+2025-07-06 19:10:38,055 - INFO - Fetching images for: Departamento de Moquegua
+2025-07-06 19:10:38,474 - INFO - Found 24 potential images for Departamento de Moquegua
+2025-07-06 19:10:39,551 - INFO - Retrieved metadata for: File:Cerro Baúl. Moquegua, Peru.jpg
+2025-07-06 19:10:39,567 - INFO - Saved image to DB: Cerro Baúl. Moquegua, Peru.jpg
+2025-07-06 19:10:40,030 - INFO - Retrieved metadata for: File:Complejo Santo Domingo de la Ciudad de Moquegua.jpg
+2025-07-06 19:10:40,045 - INFO - Saved image to DB: Complejo Santo Domingo de la Ciudad de Moquegua.jpg
+2025-07-06 19:10:40,465 - INFO - Retrieved metadata for: File:ENERSUR-ILO Peakly PP - panoramio.jpg
+2025-07-06 19:10:40,489 - INFO - Saved image to DB: ENERSUR-ILO Peakly PP - panoramio.jpg
+2025-07-06 19:10:41,378 - INFO - Retrieved metadata for: File:Ilo, Peru.jpg
+2025-07-06 19:10:41,405 - INFO - Saved image to DB: Ilo, Peru.jpg
+2025-07-06 19:10:41,835 - INFO - Retrieved metadata for: File:MC 05 poncho 29072010.jpg
+2025-07-06 19:10:41,854 - INFO - Saved image to DB: MC 05 poncho 29072010.jpg
+2025-07-06 19:10:43,285 - INFO - Retrieved metadata for: File:Malecon de Ilo - panoramio.jpg
+2025-07-06 19:10:43,316 - INFO - Saved image to DB: Malecon de Ilo - panoramio.jpg
+2025-07-06 19:10:43,735 - INFO - Retrieved metadata for: File:Mirador Cristo Blanco.jpg
+2025-07-06 19:10:43,747 - INFO - Saved image to DB: Mirador Cristo Blanco.jpg
+2025-07-06 19:10:44,195 - INFO - Retrieved metadata for: File:Moquegua Complejo Santo Domingo2.jpg
+2025-07-06 19:10:44,208 - INFO - Saved image to DB: Moquegua Complejo Santo Domingo2.jpg
+2025-07-06 19:10:44,635 - INFO - Retrieved metadata for: File:Plazamoquegua.JPG
+2025-07-06 19:10:44,648 - INFO - Saved image to DB: Plazamoquegua.JPG
+2025-07-06 19:10:45,065 - INFO - Retrieved metadata for: File:SPCC GP31ECO 71 and 72 Ilo - Toquepala.jpg
+2025-07-06 19:10:45,082 - INFO - Saved image to DB: SPCC GP31ECO 71 and 72 Ilo - Toquepala.jpg
+2025-07-06 19:10:45,505 - INFO - Retrieved metadata for: File:Ubinas ash cloud - ISS.jpg
+2025-07-06 19:10:45,529 - INFO - Saved image to DB: Ubinas ash cloud - ISS.jpg
+2025-07-06 19:10:45,935 - INFO - Retrieved metadata for: File:Ubinas volcano.jpg
+2025-07-06 19:10:45,955 - INFO - Saved image to DB: Ubinas volcano.jpg
+2025-07-06 19:10:46,435 - INFO - Retrieved metadata for: File:Vallemoquegua3.jpg
+2025-07-06 19:10:46,453 - INFO - Saved image to DB: Vallemoquegua3.jpg
+2025-07-06 19:10:46,905 - INFO - Retrieved metadata for: File:Vista panorámica de Torata.jpg
+2025-07-06 19:10:46,925 - INFO - Saved image to DB: Vista panorámica de Torata.jpg
+2025-07-06 19:10:46,925 - INFO - Saved 15 images for Departamento de Moquegua
+2025-07-06 19:10:46,925 - INFO - 
+==================================================
+Processing department: Departamento de Pasco
+==================================================
+2025-07-06 19:10:46,927 - INFO - Fetching images for: Departamento de Pasco
+2025-07-06 19:10:47,355 - INFO - Found 15 potential images for Departamento de Pasco
+2025-07-06 19:10:47,815 - INFO - Retrieved metadata for: File:Daniel Alcides Carríon García.jpg
+2025-07-06 19:10:47,845 - INFO - Saved image to DB: Daniel Alcides Carríon García.jpg
+2025-07-06 19:10:48,265 - INFO - Retrieved metadata for: File:Departamento de Pasco 2.png
+2025-07-06 19:10:48,283 - INFO - Saved image to DB: Departamento de Pasco 2.png
+2025-07-06 19:10:48,929 - INFO - Retrieved metadata for: File:Huayllay.jpg
+2025-07-06 19:10:48,957 - INFO - Saved image to DB: Huayllay.jpg
+2025-07-06 19:10:49,425 - INFO - Retrieved metadata for: File:Oxapampa peru.jpg
+2025-07-06 19:10:49,445 - INFO - Saved image to DB: Oxapampa peru.jpg
+2025-07-06 19:10:49,885 - INFO - Retrieved metadata for: File:Pozuzo 10.jpg
+2025-07-06 19:10:49,909 - INFO - Saved image to DB: Pozuzo 10.jpg
+2025-07-06 19:10:50,345 - INFO - Retrieved metadata for: File:Santuario Nacional de Huayllay - Cerro de Pasco - Perú.jpg
+2025-07-06 19:10:50,369 - INFO - Saved image to DB: Santuario Nacional de Huayllay - Cerro de Pasco - Perú.jpg
+2025-07-06 19:10:50,790 - WARNING - Image not found: File:Unidad-de-Cerro-de-Pasco-de-
+2025-07-06 19:10:50,795 - WARNING - Skipping image File:Unidad-de-Cerro-de-Pasco-de- - no valid metadata
+2025-07-06 19:10:50,795 - INFO - Saved 6 images for Departamento de Pasco
+2025-07-06 19:10:50,795 - INFO - 
+==================================================
+Processing department: Departamento de Piura
+==================================================
+2025-07-06 19:10:50,795 - INFO - Fetching images for: Departamento de Piura
+2025-07-06 19:10:51,225 - INFO - Found 29 potential images for Departamento de Piura
+2025-07-06 19:10:51,714 - INFO - Retrieved metadata for: File:Acllawasi Aypate 4.jpg
+2025-07-06 19:10:51,730 - INFO - Saved image to DB: Acllawasi Aypate 4.jpg
+2025-07-06 19:10:52,193 - INFO - Retrieved metadata for: File:Clarito en poto.JPG
+2025-07-06 19:10:52,209 - INFO - Saved image to DB: Clarito en poto.JPG
+2025-07-06 19:10:52,675 - INFO - Retrieved metadata for: File:MFPS-D-Piura.jpg
+2025-07-06 19:10:52,690 - INFO - Saved image to DB: MFPS-D-Piura.jpg
+2025-07-06 19:10:53,130 - INFO - Retrieved metadata for: File:Narihuala.jpg
+2025-07-06 19:10:53,159 - INFO - Saved image to DB: Narihuala.jpg
+2025-07-06 19:10:53,695 - INFO - Retrieved metadata for: File:Orthographic projection centred on Kanton Island.png
+2025-07-06 19:10:53,721 - INFO - Saved image to DB: Orthographic projection centred on Kanton Island.png
+2025-07-06 19:10:54,185 - INFO - Retrieved metadata for: File:Paisaje típico del distrito de Suyo.jpg
+2025-07-06 19:10:54,205 - INFO - Saved image to DB: Paisaje típico del distrito de Suyo.jpg
+2025-07-06 19:10:54,665 - INFO - Retrieved metadata for: File:Piura satelital.png
+2025-07-06 19:10:54,685 - INFO - Saved image to DB: Piura satelital.png
+2025-07-06 19:10:55,174 - INFO - Retrieved metadata for: File:Portada de Acllawasi Aypate 3.jpg
+2025-07-06 19:10:55,190 - INFO - Saved image to DB: Portada de Acllawasi Aypate 3.jpg
+2025-07-06 19:10:55,665 - INFO - Retrieved metadata for: File:Sto Domingo.JPG
+2025-07-06 19:10:55,689 - INFO - Saved image to DB: Sto Domingo.JPG
+2025-07-06 19:10:56,148 - INFO - Retrieved metadata for: File:Vichayito Beach.jpg
+2025-07-06 19:10:56,170 - INFO - Saved image to DB: Vichayito Beach.jpg
+2025-07-06 19:10:56,595 - INFO - Retrieved metadata for: File:Vista del balneario de Lobitos, Talara - Piura.jpg
+2025-07-06 19:10:56,615 - INFO - Saved image to DB: Vista del balneario de Lobitos, Talara - Piura.jpg
+2025-07-06 19:10:57,120 - INFO - Retrieved metadata for: File:Ñapique2.jpg
+2025-07-06 19:10:57,135 - INFO - Saved image to DB: Ñapique2.jpg
+2025-07-06 19:10:57,135 - INFO - Saved 12 images for Departamento de Piura
+2025-07-06 19:10:57,140 - INFO - 
+==================================================
+Processing department: Departamento de Puno
+==================================================
+2025-07-06 19:10:57,140 - INFO - Fetching images for: Departamento de Puno
+2025-07-06 19:10:57,578 - INFO - Found 32 potential images for Departamento de Puno
+2025-07-06 19:10:58,101 - INFO - Retrieved metadata for: File:34jjjjjjdjdisisis.jpg
+2025-07-06 19:10:58,120 - INFO - Saved image to DB: 34jjjjjjdjdisisis.jpg
+2025-07-06 19:10:58,620 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:10:59,046 - INFO - Retrieved metadata for: File:Amanecer en el lago Titicaca, Puno, Perú, 2015-08-01, DD 06.JPG
+2025-07-06 19:10:59,075 - INFO - Saved image to DB: Amanecer en el lago Titicaca, Puno, Perú, 2015-08-01, DD 06.JPG
+2025-07-06 19:10:59,495 - INFO - Retrieved metadata for: File:Annn4444.jpg
+2025-07-06 19:10:59,508 - INFO - Saved image to DB: Annn4444.jpg
+2025-07-06 19:10:59,970 - INFO - Retrieved metadata for: File:Artesano puneño 1.jpg
+2025-07-06 19:10:59,985 - INFO - Saved image to DB: Artesano puneño 1.jpg
+2025-07-06 19:11:00,475 - INFO - Retrieved metadata for: File:Castillo del Titicaca Puno.jpg
+2025-07-06 19:11:00,497 - INFO - Saved image to DB: Castillo del Titicaca Puno.jpg
+2025-07-06 19:11:00,990 - INFO - Retrieved metadata for: File:Cima nevado Allincapac.jpg
+2025-07-06 19:11:01,007 - INFO - Saved image to DB: Cima nevado Allincapac.jpg
+2025-07-06 19:11:01,474 - INFO - Retrieved metadata for: File:Excursion Boats (7640965294).jpg
+2025-07-06 19:11:01,492 - INFO - Saved image to DB: Excursion Boats (7640965294).jpg
+2025-07-06 19:11:01,967 - INFO - Retrieved metadata for: File:Historico Barco Yavari de Puno.jpg
+2025-07-06 19:11:01,986 - INFO - Saved image to DB: Historico Barco Yavari de Puno.jpg
+2025-07-06 19:11:02,415 - INFO - Retrieved metadata for: File:Images 888888.jpg
+2025-07-06 19:11:02,428 - INFO - Saved image to DB: Images 888888.jpg
+2025-07-06 19:11:02,920 - INFO - Retrieved metadata for: File:Isla Suasi PUNO-PERU.jpg
+2025-07-06 19:11:02,944 - INFO - Saved image to DB: Isla Suasi PUNO-PERU.jpg
+2025-07-06 19:11:03,395 - INFO - Retrieved metadata for: File:Jezero Titicaca - plovoucí ostrovy Uros - panoramio (1).jpg
+2025-07-06 19:11:03,419 - INFO - Saved image to DB: Jezero Titicaca - plovoucí ostrovy Uros - panoramio (1).jpg
+2025-07-06 19:11:03,847 - INFO - Retrieved metadata for: File:Lago Titicaca, Puno 02.jpg
+2025-07-06 19:11:03,863 - INFO - Saved image to DB: Lago Titicaca, Puno 02.jpg
+2025-07-06 19:11:04,296 - INFO - Retrieved metadata for: File:Mancocapac3 1.jpg
+2025-07-06 19:11:04,315 - INFO - Saved image to DB: Mancocapac3 1.jpg
+2025-07-06 19:11:04,752 - INFO - Retrieved metadata for: File:Peru Chenopodium quinoa.jpg
+2025-07-06 19:11:04,775 - INFO - Saved image to DB: Peru Chenopodium quinoa.jpg
+2025-07-06 19:11:05,237 - INFO - Retrieved metadata for: File:Portal UNAP.jpg
+2025-07-06 19:11:05,255 - INFO - Saved image to DB: Portal UNAP.jpg
+2025-07-06 19:11:05,685 - INFO - Retrieved metadata for: File:Puno - katedrála - panoramio.jpg
+2025-07-06 19:11:05,705 - INFO - Saved image to DB: Puno - katedrála - panoramio.jpg
+2025-07-06 19:11:06,179 - INFO - Retrieved metadata for: File:Puno Peru 10.jpg
+2025-07-06 19:11:06,201 - INFO - Saved image to DB: Puno Peru 10.jpg
+2025-07-06 19:11:06,645 - INFO - Retrieved metadata for: File:Sillustani, Puno, Puno Region, Peru - panoramio.jpg
+2025-07-06 19:11:06,660 - INFO - Saved image to DB: Sillustani, Puno, Puno Region, Peru - panoramio.jpg
+2025-07-06 19:11:07,105 - INFO - Retrieved metadata for: File:Taquile en Puno.jpg
+2025-07-06 19:11:07,126 - INFO - Saved image to DB: Taquile en Puno.jpg
+2025-07-06 19:11:07,140 - INFO - Saved 19 images for Departamento de Puno
+2025-07-06 19:11:07,141 - INFO - 
+==================================================
+Processing department: Departamento de San Martín
+==================================================
+2025-07-06 19:11:07,144 - INFO - Fetching images for: Departamento de San Martín
+2025-07-06 19:11:07,558 - INFO - Found 29 potential images for Departamento de San Martín
+2025-07-06 19:11:08,003 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:11:08,460 - INFO - Retrieved metadata for: File:Departamento de San Martín.png
+2025-07-06 19:11:08,475 - INFO - Saved image to DB: Departamento de San Martín.png
+2025-07-06 19:11:08,915 - INFO - Retrieved metadata for: File:Hipermercado Ceramico-Moyobamba.JPG
+2025-07-06 19:11:08,937 - INFO - Saved image to DB: Hipermercado Ceramico-Moyobamba.JPG
+2025-07-06 19:11:09,377 - INFO - Retrieved metadata for: File:Hipermercado Ceramico-Moyobamba entrada.JPG
+2025-07-06 19:11:09,399 - INFO - Saved image to DB: Hipermercado Ceramico-Moyobamba entrada.JPG
+2025-07-06 19:11:09,855 - INFO - Retrieved metadata for: File:O-Mega Plaza Moyobamba.JPG
+2025-07-06 19:11:09,877 - INFO - Saved image to DB: O-Mega Plaza Moyobamba.JPG
+2025-07-06 19:11:10,325 - INFO - Retrieved metadata for: File:Port de Sauce a la Laguna de Sauce a la província de San Martín.jpg
+2025-07-06 19:11:10,350 - INFO - Saved image to DB: Port de Sauce a la Laguna de Sauce a la província de San Martín.jpg
+2025-07-06 19:11:10,795 - INFO - Retrieved metadata for: File:Riu Huallaga des de la carretera de Sauce04.jpg
+2025-07-06 19:11:10,817 - INFO - Saved image to DB: Riu Huallaga des de la carretera de Sauce04.jpg
+2025-07-06 19:11:11,256 - INFO - Retrieved metadata for: File:Zona de pistes de l'Aeropuerto Cadete FAP Guillermo del Castillo Paredes de Tarapoto.jpg
+2025-07-06 19:11:11,275 - INFO - Saved image to DB: Zona de pistes de l'Aeropuerto Cadete FAP Guillermo del Castillo Paredes de Tarapoto.jpg
+2025-07-06 19:11:11,275 - INFO - Saved 7 images for Departamento de San Martín
+2025-07-06 19:11:11,275 - INFO - 
+==================================================
+Processing department: Departamento de Tacna
+==================================================
+2025-07-06 19:11:11,280 - INFO - Fetching images for: Departamento de Tacna
+2025-07-06 19:11:11,696 - INFO - Found 32 potential images for Departamento de Tacna
+2025-07-06 19:11:12,126 - INFO - Retrieved metadata for: File:CERCA DE LAS CUEVAS.jpg
+2025-07-06 19:11:12,150 - INFO - Saved image to DB: CERCA DE LAS CUEVAS.jpg
+2025-07-06 19:11:12,615 - INFO - Retrieved metadata for: File:Camino inca tarata.jpg
+2025-07-06 19:11:12,635 - INFO - Saved image to DB: Camino inca tarata.jpg
+2025-07-06 19:11:13,455 - INFO - Retrieved metadata for: File:Catedral de tacna.JPG
+2025-07-06 19:11:13,478 - INFO - Saved image to DB: Catedral de tacna.JPG
+2025-07-06 19:11:13,910 - INFO - Retrieved metadata for: File:Departamento de Tacna.png
+2025-07-06 19:11:13,926 - INFO - Saved image to DB: Departamento de Tacna.png
+2025-07-06 19:11:14,372 - INFO - Retrieved metadata for: File:Departamento moquegua 1865.JPG
+2025-07-06 19:11:14,395 - INFO - Saved image to DB: Departamento moquegua 1865.JPG
+2025-07-06 19:11:14,858 - INFO - Retrieved metadata for: File:Edificio en el centro de Tacna.jpg
+2025-07-06 19:11:14,880 - INFO - Saved image to DB: Edificio en el centro de Tacna.jpg
+2025-07-06 19:11:15,300 - INFO - Retrieved metadata for: File:Interior coliseo Peru de Tacna.jpg
+2025-07-06 19:11:15,315 - INFO - Saved image to DB: Interior coliseo Peru de Tacna.jpg
+2025-07-06 19:11:15,739 - INFO - Retrieved metadata for: File:Jarrachicha.jpg
+2025-07-06 19:11:15,763 - INFO - Saved image to DB: Jarrachicha.jpg
+2025-07-06 19:11:16,197 - INFO - Retrieved metadata for: File:Pileta.jpg
+2025-07-06 19:11:16,215 - INFO - Saved image to DB: Pileta.jpg
+2025-07-06 19:11:16,645 - INFO - Retrieved metadata for: File:Relieve region tacna.jpg
+2025-07-06 19:11:16,667 - INFO - Saved image to DB: Relieve region tacna.jpg
+2025-07-06 19:11:17,105 - INFO - Retrieved metadata for: File:Tacna Modern Railcar.JPG
+2025-07-06 19:11:17,125 - INFO - Saved image to DB: Tacna Modern Railcar.JPG
+2025-07-06 19:11:17,562 - INFO - Retrieved metadata for: File:Tacna Pampa Del Cerro Intiorko.jpg
+2025-07-06 19:11:17,578 - INFO - Saved image to DB: Tacna Pampa Del Cerro Intiorko.jpg
+2025-07-06 19:11:18,028 - INFO - Retrieved metadata for: File:Tacna estadio jorge basadre.jpg
+2025-07-06 19:11:18,045 - INFO - Saved image to DB: Tacna estadio jorge basadre.jpg
+2025-07-06 19:11:18,466 - INFO - Retrieved metadata for: File:Tacna miculla petroglifos.jpg
+2025-07-06 19:11:18,485 - INFO - Saved image to DB: Tacna miculla petroglifos.jpg
+2025-07-06 19:11:18,934 - INFO - Retrieved metadata for: File:Una pintura rupestre de la cueva de Toquepala.JPG
+2025-07-06 19:11:18,950 - INFO - Saved image to DB: Una pintura rupestre de la cueva de Toquepala.JPG
+2025-07-06 19:11:18,953 - INFO - Saved 15 images for Departamento de Tacna
+2025-07-06 19:11:18,953 - INFO - 
+==================================================
+Processing department: Departamento de Tumbes
+==================================================
+2025-07-06 19:11:18,954 - INFO - Fetching images for: Departamento de Tumbes
+2025-07-06 19:11:19,388 - INFO - Found 20 potential images for Departamento de Tumbes
+2025-07-06 19:11:19,825 - INFO - Retrieved metadata for: File:Catedraltumbes.JPG
+2025-07-06 19:11:19,845 - INFO - Saved image to DB: Catedraltumbes.JPG
+2025-07-06 19:11:20,285 - INFO - Retrieved metadata for: File:Clima de Tumbes.png
+2025-07-06 19:11:20,305 - INFO - Saved image to DB: Clima de Tumbes.png
+2025-07-06 19:11:20,745 - INFO - Retrieved metadata for: File:Iglesia de Tumbes.jpg
+2025-07-06 19:11:20,756 - INFO - Saved image to DB: Iglesia de Tumbes.jpg
+2025-07-06 19:11:21,195 - INFO - Retrieved metadata for: File:MINISTRO VALAKIVI ENCABEZÓ ACCIONES A FAVOR DE DAMINIFICADOS EN TUMBES (16859594150).jpg
+2025-07-06 19:11:21,213 - INFO - Saved image to DB: MINISTRO VALAKIVI ENCABEZÓ ACCIONES A FAVOR DE DAMINIFICADOS EN TUMBES (16859594150).jpg
+2025-07-06 19:11:21,646 - INFO - Retrieved metadata for: File:MINISTRO VALAKIVI ENCABEZÓ ACCIONES A FAVOR DE DAMINIFICADOS EN TUMBES (16860928429).jpg
+2025-07-06 19:11:21,662 - INFO - Saved image to DB: MINISTRO VALAKIVI ENCABEZÓ ACCIONES A FAVOR DE DAMINIFICADOS EN TUMBES (16860928429).jpg
+2025-07-06 19:11:22,087 - INFO - Retrieved metadata for: File:Manglares de Tumbes.jpg
+2025-07-06 19:11:22,105 - INFO - Saved image to DB: Manglares de Tumbes.jpg
+2025-07-06 19:11:22,590 - INFO - Retrieved metadata for: File:Panoramic No. 3 of Pampas de Hospital.jpg
+2025-07-06 19:11:22,608 - INFO - Saved image to DB: Panoramic No. 3 of Pampas de Hospital.jpg
+2025-07-06 19:11:23,045 - INFO - Retrieved metadata for: File:Punta Sal, Peru.jpg
+2025-07-06 19:11:23,062 - INFO - Saved image to DB: Punta Sal, Peru.jpg
+2025-07-06 19:11:23,485 - INFO - Retrieved metadata for: File:Qhapaq ñan tumbes.jpg
+2025-07-06 19:11:23,499 - INFO - Saved image to DB: Qhapaq ñan tumbes.jpg
+2025-07-06 19:11:23,500 - INFO - Saved 9 images for Departamento de Tumbes
+2025-07-06 19:11:23,500 - INFO - 
+==================================================
+Processing department: Departamento de Ucayali
+==================================================
+2025-07-06 19:11:23,501 - INFO - Fetching images for: Departamento de Ucayali
+2025-07-06 19:11:23,939 - INFO - Found 23 potential images for Departamento de Ucayali
+2025-07-06 19:11:24,475 - INFO - Retrieved metadata for: File:Acción Popular.png
+2025-07-06 19:11:24,915 - INFO - Retrieved metadata for: File:Boquerón de Padre Abad.jpg
+2025-07-06 19:11:24,953 - INFO - Saved image to DB: Boquerón de Padre Abad.jpg
+2025-07-06 19:11:25,383 - INFO - Retrieved metadata for: File:Departamento de Ucayali 3.png
+2025-07-06 19:11:25,401 - INFO - Saved image to DB: Departamento de Ucayali 3.png
+2025-07-06 19:11:25,835 - INFO - Retrieved metadata for: File:Ecuador composting method-leaves cover (Peru).jpg
+2025-07-06 19:11:25,855 - INFO - Saved image to DB: Ecuador composting method-leaves cover (Peru).jpg
+2025-07-06 19:11:26,277 - INFO - Retrieved metadata for: File:Escudo Regional de Ucayali.png
+2025-07-06 19:11:26,295 - INFO - Saved image to DB: Escudo Regional de Ucayali.png
+2025-07-06 19:11:26,725 - INFO - Retrieved metadata for: File:Manuelgambinirupay.jpg
+2025-07-06 19:11:26,742 - INFO - Saved image to DB: Manuelgambinirupay.jpg
+2025-07-06 19:11:27,168 - INFO - Retrieved metadata for: File:Panguana-2004-6.JPG
+2025-07-06 19:11:27,190 - INFO - Saved image to DB: Panguana-2004-6.JPG
+2025-07-06 19:11:27,636 - INFO - Retrieved metadata for: File:Panguana-Lupuna-2008-2.jpg
+2025-07-06 19:11:27,656 - INFO - Saved image to DB: Panguana-Lupuna-2008-2.jpg
+2025-07-06 19:11:28,076 - INFO - Retrieved metadata for: File:Peru - PiranhaFishing.jpg
+2025-07-06 19:11:28,100 - INFO - Saved image to DB: Peru - PiranhaFishing.jpg
+2025-07-06 19:11:28,545 - INFO - Retrieved metadata for: File:Puerto de San Francisco, Yarinacocha..jpg
+2025-07-06 19:11:28,565 - INFO - Saved image to DB: Puerto de San Francisco, Yarinacocha..jpg
+2025-07-06 19:11:29,015 - INFO - Retrieved metadata for: File:RioPurus.jpg
+2025-07-06 19:11:29,035 - INFO - Saved image to DB: RioPurus.jpg
+2025-07-06 19:11:29,461 - INFO - Retrieved metadata for: File:Ucayali basin.jpg
+2025-07-06 19:11:29,478 - INFO - Saved image to DB: Ucayali basin.jpg
+2025-07-06 19:11:29,478 - INFO - Saved 11 images for Departamento de Ucayali
+2025-07-06 19:11:29,478 - INFO - Image collection process completed
