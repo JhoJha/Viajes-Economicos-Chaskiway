@@ -1,8 +1,11 @@
 import requests
 import csv
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 
-API_KEY = "***REMOVED_SERPAPI_KEY***"
+load_dotenv()
+API_KEY = os.getenv('SERPAPI_KEY')
 
 # Búsquedas mejoradas por ciudad
 CIUDADES = {
