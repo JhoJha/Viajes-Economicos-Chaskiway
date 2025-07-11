@@ -58,7 +58,7 @@ El proyecto sigue un pipeline de datos claro y modular para garantizar la calida
 | Integrante | Usuario de GitHub | Rol en el Proyecto |
 | :--- | :--- | :--- |
 | **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
-| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
+| **Jonnathan Jesús Pedraza Laboriano** | `[jonnathan2023]` | Backend, Scraper de Imágenes y Frontend |
 | **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
 
 ---
@@ -94,3 +94,21 @@ El flujo de trabajo es: cada integrante trabaja en su rama asignada, y una vez q
 ## 📞 Contacto
 
 Para más información, contactar a: `20231515@lamolina.edu.pe`
+
+---
+
+### 🔎 Sobre la extracción de datos de RedBus
+
+En vez de realizar scraping tradicional de HTML (“scraping duro”), el equipo identificó y utilizó la **API interna de RedBus**. Esto se logró mediante inspección de la red en el navegador, donde se detectó la solicitud POST que la web realiza para obtener los datos de viajes. A partir de esa solicitud, se construyó el extractor que descarga los datos en formato JSON de manera estructurada y eficiente.
+
+**Ventajas:**
+- Mayor velocidad y menor riesgo de errores por cambios en el HTML.
+- Datos más limpios y estructurados.
+- Menor carga para el servidor web.
+
+**Nota:**
+El uso de APIs internas requiere análisis de tráfico de red y comprensión de cómo la web interactúa con su backend, lo que demuestra habilidades avanzadas de scraping e ingeniería inversa.
+
+---
+
+> **Recomendación:** Para mayor claridad y mantenibilidad, cada carpeta principal del proyecto (por ejemplo, `backend/scraping/redbus`, `backend/scraping/clima`, `backend/database`, etc.) debería incluir un archivo `README.md` explicando brevemente su función y cómo usar los scripts que contiene.

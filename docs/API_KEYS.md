@@ -4,32 +4,17 @@ Este documento explica cómo configurar las API keys necesarias para el funciona
 
 ## 📋 APIs Requeridas
 
-### 1. Visual Crossing Weather API
-**Propósito:** Obtener datos de clima para los destinos
-**URL:** https://www.visualcrossing.com/weather-api
+### 1. SerpAPI (para imágenes de destinos)
+**Propósito:** Obtener imágenes de los destinos usando Google Images vía SerpAPI
+**URL:** https://serpapi.com/
 
 #### Configuración:
-1. Regístrate en Visual Crossing Weather API
-2. Obtén tu API key gratuita
-3. Crea un archivo `.env` en la raíz del proyecto:
+1. Regístrate en SerpAPI y obtén tu API key gratuita.
+2. Crea un archivo `.env` en la raíz del proyecto:
 
 ```bash
 # .env
-VISUAL_CROSSING_API_KEY=tu_api_key_aqui
-```
-
-### 2. Pixabay API
-**Propósito:** Obtener imágenes de los destinos
-**URL:** https://pixabay.com/api/docs/
-
-#### Configuración:
-1. Regístrate en Pixabay
-2. Obtén tu API key gratuita
-3. Agrega a tu archivo `.env`:
-
-```bash
-# .env
-PIXABAY_API_KEY=tu_api_key_aqui
+SERPAPI_KEY=tu_api_key_aqui
 ```
 
 ## 🔧 Configuración del Proyecto
@@ -42,29 +27,16 @@ pip install python-dotenv
 ### Paso 2: Crear archivo .env
 ```bash
 # .env
-VISUAL_CROSSING_API_KEY=tu_api_key_visual_crossing
-PIXABAY_API_KEY=tu_api_key_pixabay
+SERPAPI_KEY=tu_api_key_serpapi
 ```
 
-### Paso 3: Modificar los scrapers
-Actualiza los archivos de scraping para usar las variables de entorno:
+### Paso 3: El scraper de imágenes ya está configurado para usar la variable de entorno:
 
-#### Para clima (backend/scraping/clima/scraper.py):
 ```python
 import os
 from dotenv import load_dotenv
-
 load_dotenv()
-API_KEY = os.getenv('VISUAL_CROSSING_API_KEY')
-```
-
-#### Para imágenes (backend/scraping/imagenes/scraper.py):
-```python
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-API_KEY = os.getenv('PIXABAY_API_KEY')
+API_KEY = os.getenv('SERPAPI_KEY')
 ```
 
 ## ⚠️ Notas Importantes
@@ -78,26 +50,19 @@ API_KEY = os.getenv('PIXABAY_API_KEY')
 
 Para verificar que todo funciona:
 
-1. Ejecuta el scraper de clima:
-```bash
-python backend/scraping/clima/scraper.py
-```
-
-2. Ejecuta el scraper de imágenes:
+1. Ejecuta el scraper de imágenes:
 ```bash
 python backend/scraping/imagenes/scraper.py
 ```
 
-3. Ejecuta el pipeline completo:
+2. Ejecuta el pipeline completo:
 ```bash
 python main.py
 ```
 
 ## 📞 Soporte
 
-Si tienes problemas con las APIs:
-- Visual Crossing: https://www.visualcrossing.com/support
-- Pixabay: https://pixabay.com/service/contact/
+- SerpAPI: https://serpapi.com/contact
 
 ## 🔒 Seguridad
 
