@@ -1,4 +1,4 @@
-# frontend/utils.py
+# frontend/data_loader.py
 
 import streamlit as st
 import pandas as pd
@@ -39,8 +39,12 @@ def load_data():
 
         return df
     
+    except FileNotFoundError:
+        st.error("❌ No se encontró la base de datos. Ejecuta primero el pipeline de datos con 'python main.py'")
+        return pd.DataFrame()
+    except sqlite3.Error as e:
+        st.error(f"❌ Error en la base de datos: {e}")
+        return pd.DataFrame()
     except Exception as e:
-        # Si algo falla, se mostrará un error claro en la app
-        st.error(f"Error crítico al cargar los datos: {e}")
-        # Devolvemos un DataFrame vacío para evitar que la app se rompa más adelante
+        st.error(f"❌ Error inesperado al cargar los datos: {e}")
         return pd.DataFrame()
