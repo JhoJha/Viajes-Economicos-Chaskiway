@@ -1,0 +1,94 @@
+
+# 📄 Informe: Importancia Social y Colaborativa del Proyecto **Chaskiway**
+
+## 1. 🌍 Importancia del Proyecto en la Sociedad
+
+**Chaskiway** es mucho más que una simple aplicación web; representa una solución tecnológica con un impacto real y tangible en la vida de los ciudadanos peruanos. En un país con una geografía compleja, una diversidad climática marcada y un desarrollo digital en crecimiento, contar con una herramienta como Chaskiway permite:
+
+### a. Democratización del Acceso a la Información de Transporte
+En Perú, planificar un viaje interprovincial puede ser complicado debido a la dispersión y falta de estandarización de la información sobre precios, horarios y empresas de transporte. Chaskiway centraliza esta información a través de técnicas de web scraping, permitiendo que cualquier persona —sin importar su nivel técnico— acceda fácilmente a opciones de viaje económicas, seguras y cómodas.
+
+### b. Optimización Económica para el Usuario Final
+Al integrar un **algoritmo de recomendación** que considera tanto el **presupuesto personal como las preferencias de clima y calidad del servicio**, la aplicación se convierte en un asistente inteligente de viaje. Esto puede traducirse en **ahorros económicos directos para los usuarios**, y una mejora sustancial en su experiencia de viaje.
+
+### c. Promoción del Turismo Local y Desarrollo Regional
+Gracias a la integración con APIs de imágenes y datos climáticos, Chaskiway también **visibiliza destinos que normalmente pasan desapercibidos**, incentivando el turismo nacional y ayudando al desarrollo económico de regiones menos visitadas. Esto tiene un potencial efecto multiplicador en comunidades locales que dependen del turismo como fuente de ingresos.
+
+### d. Educación Tecnológica y Transformación Digital
+El proyecto mismo es una demostración concreta de cómo se pueden aplicar técnicas de ingeniería de software (scraping, ETL, bases de datos, frontend interactivo) para resolver problemas reales. Sirve de **modelo educativo y formativo** para otros estudiantes y desarrolladores en formación.
+
+---
+
+## 2. 👨‍💻 Aportes Individuales y su Relevancia
+
+### 🔧 Jhon Jhayro Villegas Verde (`JhoJha`)
+**Rol:** Backend, Scraper de RedBus y Base de Datos
+
+**Aporte técnico:**
+- Desarrollo del **scraper del portal RedBus**, el núcleo de información sobre pasajes y horarios de viaje.
+- Creación y estructuración de la **base de datos SQLite**, asegurando la integridad, eficiencia y escalabilidad de los datos recolectados.
+
+**Importancia:**
+El scraper de RedBus es la columna vertebral del sistema. Sin este módulo, la aplicación carecería de datos críticos como precios, empresas, horarios y ratings. Además, su trabajo en la base de datos garantiza que los datos de diferentes fuentes puedan ser combinados de forma efectiva, facilitando tanto el rendimiento como la mantenibilidad del sistema.
+
+---
+
+### 🌤️ David Ojeda Valdiviezo (`20210842`)
+**Rol:** Backend, Scraper de Clima y Dashboard
+
+**Aporte técnico:**
+- Conector a la **API meteorológica Visual Crossing**, que permite enriquecer la experiencia del usuario filtrando destinos por condiciones climáticas.
+- Diseño del **dashboard visual en Streamlit**, interfaz principal que permite al usuario interactuar intuitivamente con los datos.
+
+**Importancia:**
+El scraper de clima permite a los usuarios tomar decisiones más informadas al viajar, adaptándose a sus preferencias (por ejemplo, evitar lluvias o buscar climas templados). Su contribución al dashboard permite **transformar datos complejos en visualizaciones accesibles**, mejorando la usabilidad y el impacto del sistema.
+
+---
+
+### 🖼️ Jonnathan Jesús Pedraza Laboriano
+**Rol:** Backend, Scraper de Imágenes con SerpAPI y Desarrollo del Frontend
+
+**Aporte técnico:**
+- Reemplazo del uso de la API de Pixabay por una integración más robusta mediante **SerpAPI** para realizar búsquedas directas en **Google Imágenes**, logrando así imágenes más representativas, localizadas y de mejor calidad para cada ciudad.
+- Implementación de un scraper inteligente que asocia nombres de ciudades con puntos emblemáticos (ej. *“Plaza de Armas Trujillo Perú”*, *“Centro histórico de Arequipa Perú”*), obteniendo resultados mucho más específicos y visualmente atractivos.
+- Automatización del guardado de los enlaces de imágenes en un archivo CSV estructurado, reutilizable y centralizado (`enlaces_imagenes.csv`), listo para ser consumido por el frontend.
+- Desarrollo del **frontend interactivo con Streamlit**, permitiendo una experiencia visual clara, responsiva y agradable para el usuario.
+
+**Detalles técnicos clave del scraping de imágenes:**
+- Uso de la librería `requests` para consumir la API de SerpAPI.
+- Manejo de errores robusto con `try-except` para garantizar que el pipeline no se interrumpa ante fallas puntuales.
+- Persistencia de los resultados mediante la escritura estructurada de archivos CSV utilizando `csv.writer`.
+- Uso del módulo `pathlib` para garantizar rutas dinámicas y portables dentro del entorno del proyecto.
+
+**Importancia de su trabajo:**
+Tu aporte tiene una dimensión **visual, técnica y estratégica**:
+
+1. **Visual:** Las imágenes no son un simple añadido, sino un componente que **motiva, informa e inspira** a los usuarios. Ver fotos representativas y atractivas de los destinos ayuda a tomar decisiones más emocionales y concretas. Esto es vital en una app de recomendación de viajes.
+
+2. **Técnica:** La sustitución de Pixabay por SerpAPI muestra iniciativa para mejorar la calidad del producto. Esta decisión requiere comprender los límites de una API genérica de imágenes frente al motor de búsqueda más potente del mundo (Google), lo que incrementa la relevancia de los resultados y la personalización por ciudad.
+
+3. **Estrategia de datos:** Centralizar los enlaces en un archivo CSV bien estructurado permite escalar fácilmente el sistema, agregar nuevos destinos, y mantener una arquitectura limpia y separada de responsabilidades (data/raw vs data/processed).
+
+4. **Frontend:** Al encargarte de la interfaz en Streamlit, conectaste todos los módulos previos (scraping, base de datos, visualización) y diste forma a lo que el usuario ve. Tu diseño define la usabilidad y el impacto del sistema, actuando como el rostro visible del proyecto.
+
+**En resumen:** Tu rol fue esencial no solo por tus tareas concretas, sino porque **conectaste el dato con la experiencia del usuario**. Lograste que el sistema no solo funcione, sino que también emocione, motive e informe visualmente. Esto es lo que hace que un software deje de ser solo “funcional” y se vuelva **atractivo, intuitivo y memorable**.
+
+---
+
+## 3. 🤝 Importancia de la Colaboración Multidisciplinaria
+
+El éxito de Chaskiway radica en la **especialización funcional de cada integrante**. Cada miembro del equipo asumió un componente específico del sistema, evitando redundancias y permitiendo un desarrollo modular y escalable. Este tipo de enfoque fomenta:
+
+- **Responsabilidad individual clara.**
+- **Trabajo en paralelo eficiente.**
+- **Integración limpia mediante control de versiones (Git y GitHub).**
+
+La estrategia de ramas aplicada (feature branches, rama `dev`, y rama `main`) es también un aprendizaje crucial para trabajar en entornos colaborativos profesionales.
+
+---
+
+## 4. 🧠 Conclusión
+
+**Chaskiway** representa una herramienta potente para mejorar la calidad de vida de los ciudadanos peruanos que buscan viajar de forma informada, económica y segura. Además, es un excelente ejemplo de cómo un equipo organizado, con roles claramente definidos, puede crear una solución innovadora y con alto impacto social aplicando conocimientos de ingeniería de software.
+
+El proyecto trasciende el aula: plantea una alternativa real a un problema cotidiano en el Perú, y podría escalar fácilmente a nivel nacional, o incluso internacional, con las adaptaciones adecuadas.
