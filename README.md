@@ -1,96 +1,163 @@
 # 🚌 Chaskiway: Recomendador de Viajes Económicos por el Perú
 
-**Chaskiway** es una aplicación web desarrollada como proyecto para el curso de Lenguaje de Programación 2. Su objetivo es ayudar a los usuarios a planificar viajes interprovinciales desde Lima de manera inteligente, recomendando las mejores opciones en función de su presupuesto, preferencias de clima y calidad del servicio.
+**Chaskiway** es una aplicación web colaborativa desarrollada para el curso de Lenguaje de Programación 2. Su objetivo es ayudar a los usuarios a planificar viajes interprovinciales desde Lima, recomendando las mejores opciones según presupuesto, clima y calidad del servicio, integrando datos de múltiples fuentes reales.
 
 ---
 
 ## 🎯 Objetivo del Proyecto
 
-Desarrollar una aplicación web interactiva que integre y analice datos de múltiples fuentes para ofrecer recomendaciones de viaje personalizadas. El proyecto demuestra la aplicación de técnicas de web scraping, procesamiento de datos, creación de bases de datos y visualización de información en una solución de software completa y funcional.
+Desarrollar una solución completa de extracción, integración y visualización de datos de viajes, aplicando técnicas de scraping, consumo de APIs, procesamiento y visualización interactiva.
 
 ### Objetivos Específicos
-- **Recolectar** información de pasajes, clima e imágenes de tres fuentes distintas.
-- **Integrar** los datos recolectados en una única base de datos centralizada.
-- **Desarrollar** un algoritmo de recomendación simple basado en un sistema de puntuación.
-- **Crear** un dashboard visual e interactivo con Streamlit para presentar los resultados al usuario.
+- **Recolectar** información de pasajes, clima e imágenes de al menos tres fuentes distintas.
+- **Integrar** los datos en una base centralizada y limpia.
+- **Desarrollar** un sistema de recomendación personalizado.
+- **Presentar** los resultados en una interfaz web moderna y visual.
 
 ---
 
-## 🧱 Arquitectura y Flujo de Datos
+## 🏗️ Arquitectura y Flujo de Datos
 
-El proyecto sigue un pipeline de datos claro y modular para garantizar la calidad y consistencia de la información.
+```mermaid
+graph TD
+    A[RedBus (API interna)] --> B[Datos crudos JSON]
+    C[API Clima (Open-Meteo)] --> D[Datos crudos CSV]
+    E[API Imágenes (SerpAPI)] --> F[Enlaces CSV]
+    B & D & F --> G[main.py: Integración y limpieza]
+    G --> H[Base de datos SQLite]
+    H --> I[Frontend Streamlit]
+```
+
+1. **Extracción:**  
+   - [`backend/scraping/redbus`](backend/scraping/redbus/): Extrae datos de viajes desde la API interna de RedBus (identificada por inspección de red).
+   - [`backend/scraping/clima`](backend/scraping/clima/): Descarga y procesa datos de clima desde la API pública de Open-Meteo.
+   - [`backend/scraping/imagenes`](backend/scraping/imagenes/): Obtiene enlaces de imágenes de la API de SerpAPI.
+
+2. **Integración:**  
+   - [`main.py`](main.py) orquesta la limpieza y combinación de los datos, generando la base de datos final en `data/processed/viajes_grupales.db`.
+
+3. **Presentación:**  
+   - [`frontend/app.py`](frontend/app.py) consume la base de datos y presenta recomendaciones y visualizaciones interactivas.
+
+---
+
+## 📚 Estructura del Proyecto
 
 ```
-[Fuente 1: RedBus] --(Scraper)--> [Datos Crudos: JSONs] --+
-                                                          |
-[Fuente 2: API Clima] --(Scraper)--> [Datos Crudos: CSV] ----> [main.py: Combinación] --> [Base de Datos SQLite] --> [Frontend: Streamlit]
-                                                          |
-[Fuente 3: API Imágenes] --(Scraper)--> [Datos Crudos: JSON] --+
+Viajes-Economicos-Chaskiway/
+│
+├── backend/
+│   ├── scraping/         # Scrapers de RedBus, clima e imágenes ([README](backend/scraping/README.md))
+│   │   ├── redbus/      # Scraper RedBus ([README](backend/scraping/redbus/README.md))
+│   │   ├── clima/       # Scraper Clima ([README](backend/scraping/clima/README.md))
+│   │   └── imagenes/    # Scraper Imágenes ([README](backend/scraping/imagenes/README.md))
+│   └── database/        # Esquema y carga de la base de datos ([README](backend/database/README.md))
+│
+├── data/
+│   ├── raw/             # Datos crudos extraídos de las fuentes ([README](data/raw/README.md))
+│   └── processed/       # Datos integrados y base de datos final ([README](data/README.md))
+│
+├── frontend/            # Interfaz web en Streamlit ([README](frontend/README.md))
+│
+├── utils/               # Utilidades de validación y logging ([README](utils/README.md))
+│
+├── main.py              # Pipeline de integración de datos
+├── requirements.txt     # Dependencias del proyecto
+├── README.md            # (Este archivo)
+└── docs/                # Documentación y presentaciones ([README](docs/README.md))
 ```
 
-1.  **Extracción (Scraping):** Tres scripts independientes se encargan de recolectar los datos de sus respectivas fuentes y guardarlos en la carpeta `data/raw/`.
-2.  **Combinación y Carga (ETL):** El script `main.py` actúa como orquestador. Lee los tres conjuntos de datos crudos, los limpia y los combina usando la ciudad de destino como clave común. El resultado se carga en una base de datos SQLite en `data/processed/`.
-3.  **Presentación (Frontend):** La aplicación `frontend/app.py` se conecta únicamente a la base de datos final para leer los datos ya procesados y presentarlos al usuario.
+---
+
+## 🧑‍💻 Equipo de Desarrollo
+
+| Integrante                        | Usuario de GitHub         | Rol en el Proyecto                        |
+|----------------------------------- |--------------------------|-------------------------------------------|
+| **Jhon Jhayro Villegas Verde**    | `JhoJha`                 | Backend, Scraper RedBus, Base de Datos    |
+| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper Imágenes, Frontend  |
+| **David Ojeda Valdiviezo**        | `20210842`               | Backend, Scraper Clima, Dashboard         |
 
 ---
 
-## 📚 Fuentes de Información
+## 🔑 Fuentes de Información
 
-1.  **Portal RedBus:** Se utiliza para extraer información detallada de viajes (precios, horarios, empresas, ratings, asientos disponibles) mediante técnicas de web scraping.
-2.  **API Meteorológica (Visual Crossing):** Provee datos históricos y de pronóstico del clima para cada ciudad de destino, permitiendo filtrar por preferencias climáticas.
-3.  **API de Imágenes (Pixabay):** Suministra imágenes representativas de alta calidad para cada destino, enriqueciendo la experiencia visual de la aplicación.
-
----
-
-## 🚀 Tecnologías Utilizadas
-
-- **Lenguaje:** Python 3.11
-- **Web Scraping:** `requests`, `beautifulsoup4` (si aplica)
-- **Procesamiento de Datos:** `pandas`
-- **Base de Datos:** `sqlite3`
-- **Frontend:** `streamlit`
-- **Control de Versiones:** Git y GitHub
+1. **RedBus:**  
+   - Se utilizó la **API interna** identificada mediante inspección de red, permitiendo obtener datos estructurados de viajes (precios, horarios, empresas, asientos, ratings) de forma eficiente y robusta.
+2. **API de Clima (Open-Meteo):**  
+   - Provee datos históricos y de pronóstico para cada destino, sin requerir autenticación.
+3. **API de Imágenes (SerpAPI):**  
+   - Suministra imágenes representativas de alta calidad para cada destino usando Google Images.
 
 ---
 
-## 👨‍💻 Equipo de Desarrollo
+## 🚀 Ejecución paso a paso
 
-| Integrante | Usuario de GitHub | Rol en el Proyecto |
-| :--- | :--- | :--- |
-| **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
-| **Jonnathan Jesús Pedraza Laboriano** | `jonnathan2023` | Backend, Scraper de Imágenes y Frontend |
-| **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
+### 1. Instala dependencias y configura el entorno
+
+```bash
+git clone https://github.com/JhoJha/Viajes-Economicos-Chaskiway.git
+cd Viajes-Economicos-Chaskiway
+python -m venv venv
+source venv/bin/activate  # o .\venv\Scripts\activate en Windows
+pip install -r requirements.txt
+```
+
+### 2. Configura las API keys
+
+- Crea un archivo `.env` siguiendo el ejemplo en [`docs/API_KEYS.md`](docs/API_KEYS.md).
+- Solo es necesaria la key de SerpAPI para imágenes.
+
+### 3. Ejecuta los scrapers
+
+```bash
+python backend/scraping/redbus/run_scraper.py
+python backend/scraping/clima/scraper.py
+python backend/scraping/clima/procesador.py
+python backend/scraping/imagenes/scraper.py
+```
+
+### 4. Ejecuta el pipeline de integración
+
+```bash
+python main.py
+```
+- Si falta algún archivo crítico, el pipeline te avisará y se detendrá.
+
+### 5. Levanta el frontend
+
+```bash
+streamlit run frontend/app.py
+```
 
 ---
 
-## Git Workflow: Estrategia de Ramas
+## 🛠️ Dificultades Encontradas y Soluciones
 
-Para asegurar una colaboración ordenada y eficiente, el proyecto utiliza un flujo de trabajo basado en ramas de funcionalidad (`feature branches`):
-
--   🌳 **`main`**: Rama principal. Contiene únicamente las versiones estables y funcionales del proyecto. Solo se fusiona desde `dev` cuando una versión ha sido probada y aprobada por el equipo.
--   🛠️ **`dev`**: Rama de desarrollo e integración. Es la rama donde se unen todos los avances. Antes de fusionar a `main`, todo debe funcionar correctamente en `dev`.
--   🚌 **`scraper-redbus`**: Rama dedicada exclusivamente al desarrollo del scraper de RedBus y la lógica de su base de datos. (Responsable: Jhon Villegas).
--   🌦️ **`scraper-clima`**: Rama para el desarrollo del conector a la API de clima. (Responsable: David Ojeda Valdiviezo).
--   🖼️ **`scraper-imagenes`**: Rama para el desarrollo del conector a la API de imágenes. (Responsable: Jonnathan Pedraza).
--   🖥️ **`dashboard`**: Rama dedicada al desarrollo de la interfaz de usuario y las visualizaciones en Streamlit.
-
-El flujo de trabajo es: cada integrante trabaja en su rama asignada, y una vez que su funcionalidad está completa, crea un **Pull Request** hacia la rama `dev` para su revisión e integración.
+- **Integración de datos heterogéneos:**  
+  Se normalizaron nombres y formatos para combinar fuentes distintas.
+- **Límites de APIs y manejo de claves:**  
+  Se gestionaron claves con variables de entorno y manejo de errores.
+- **Scraping de RedBus:**  
+  Se identificó y utilizó la API interna mediante inspección de red, evitando el scraping HTML tradicional.
+- **Colaboración y control de versiones:**  
+  Se definió una estrategia de ramas y uso de Pull Requests para evitar conflictos.
 
 ---
 
-## 📌 Estado Actual del Proyecto
+## 📸 Capturas de pantalla
 
-🚧 **En Desarrollo.**
-
-- [X] Creación de la estructura base del proyecto y repositorio.
-- [X] Definición de la estrategia de ramas y flujo de trabajo en Git.
-- [ ] Desarrollo de los scrapers individuales.
-- [ ] Diseño del esquema de la base de datos.
-- [ ] Implementación del pipeline de integración de datos.
-- [ ] Desarrollo de la interfaz de usuario en Streamlit.
+_Agrega aquí imágenes del dashboard y del buscador para ilustrar la app._
 
 ---
 
-## 📞 Contacto
+## 📄 Documentación adicional
+
+- Cada carpeta principal y de scrapers incluye su propio `README.md` explicativo.
+- Consulta [`docs/API_KEYS.md`](docs/API_KEYS.md) para la gestión de claves.
+- Presentación final disponible en [`docs/presentacion_final.pptx`](docs/presentacion_final.pptx).
+
+---
+
+## 📬 Contacto
 
 Para más información, contactar a: `20231515@lamolina.edu.pe`

@@ -1,0 +1,20 @@
+{
+  "SrcCountry": null,
+  "RTORouteLst": null,
+  "metaData": null,
+  "inventories": null,
+  "highlightedInv": null,
+  "sort": 0,
+  "showOOPSAction": 0,
+  "parentSrcCityName": null,
+  "parentDstCityName": null,
+  "parentSrcCityId": 0,
+  "parentDstCityId": 0,
+  "srcCountry": null,
+  "dstCountry": null,
+  "sortLabel": null,
+  "uuidAtSRP": null,
+  "busCounts": null,
+  "operatorValidations": null,
+  "streaks": null
+}
