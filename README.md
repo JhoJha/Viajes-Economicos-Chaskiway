@@ -18,14 +18,19 @@ Desarrollar una solución completa de extracción, integración y visualización
 
 ## 🏗️ Arquitectura y Flujo de Datos
 
+## 🏗️ Arquitectura y Flujo de Datos
+
 ```mermaid
 graph TD
     A[RedBus (API interna)] --> B[Datos crudos JSON]
     C[API Clima (Open-Meteo)] --> D[Datos crudos CSV]
     E[API Imágenes (SerpAPI)] --> F[Enlaces CSV]
-    B & D & F --> G[main.py: Integración y limpieza]
+    B --> G[main.py: Integración y limpieza]
+    D --> G
+    F --> G
     G --> H[Base de datos SQLite]
     H --> I[Frontend Streamlit]
+
 ```
 
 1. **Extracción:**  
@@ -71,11 +76,11 @@ Viajes-Economicos-Chaskiway/
 
 ## 🧑‍💻 Equipo de Desarrollo
 
-| Integrante                        | Usuario de GitHub         | Rol en el Proyecto                        |
-|----------------------------------- |--------------------------|-------------------------------------------|
-| **Jhon Jhayro Villegas Verde**    | `JhoJha`                 | Backend, Scraper RedBus, Base de Datos    |
-| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper Imágenes, Frontend  |
-| **David Ojeda Valdiviezo**        | `20210842`               | Backend, Scraper Clima, Dashboard         |
+| Integrante | Usuario de GitHub | Rol en el Proyecto |
+| :--- | :--- | :--- |
+| **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
+| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
+| **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
 
 ---
 
