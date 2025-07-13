@@ -18,20 +18,19 @@ Desarrollar una solución completa de extracción, integración y visualización
 
 ## 🏗️ Arquitectura y Flujo de Datos
 
-## 🏗️ Arquitectura y Flujo de Datos
-
 ```mermaid
 graph TD
-    A[RedBus (API interna)] --> B[Datos crudos JSON]
-    C[API Clima (Open-Meteo)] --> D[Datos crudos CSV]
-    E[API Imágenes (SerpAPI)] --> F[Enlaces CSV]
+    A[RedBus - API interna] --> B[Datos crudos JSON]
+    C[API Clima - Open-Meteo] --> D[Datos crudos CSV]
+    E[API Imágenes - SerpAPI] --> F[Enlaces CSV]
     B --> G[main.py: Integración y limpieza]
     D --> G
     F --> G
     G --> H[Base de datos SQLite]
     H --> I[Frontend Streamlit]
-
 ```
+
+### Flujo del Sistema
 
 1. **Extracción:**  
    - [`backend/scraping/redbus`](backend/scraping/redbus/): Extrae datos de viajes desde la API interna de RedBus (identificada por inspección de red).
@@ -52,24 +51,24 @@ graph TD
 Viajes-Economicos-Chaskiway/
 │
 ├── backend/
-│   ├── scraping/         # Scrapers de RedBus, clima e imágenes ([README](backend/scraping/README.md))
-│   │   ├── redbus/      # Scraper RedBus ([README](backend/scraping/redbus/README.md))
-│   │   ├── clima/       # Scraper Clima ([README](backend/scraping/clima/README.md))
-│   │   └── imagenes/    # Scraper Imágenes ([README](backend/scraping/imagenes/README.md))
-│   └── database/        # Esquema y carga de la base de datos ([README](backend/database/README.md))
+│   ├── scraping/         # Scrapers de RedBus, clima e imágenes
+│   │   ├── redbus/      # Scraper RedBus
+│   │   ├── clima/       # Scraper Clima
+│   │   └── imagenes/    # Scraper Imágenes
+│   └── database/        # Esquema y carga de la base de datos
 │
 ├── data/
-│   ├── raw/             # Datos crudos extraídos de las fuentes ([README](data/raw/README.md))
-│   └── processed/       # Datos integrados y base de datos final ([README](data/README.md))
+│   ├── raw/             # Datos crudos extraídos de las fuentes
+│   └── processed/       # Datos integrados y base de datos final
 │
-├── frontend/            # Interfaz web en Streamlit ([README](frontend/README.md))
+├── frontend/            # Interfaz web en Streamlit
 │
-├── utils/               # Utilidades de validación y logging ([README](utils/README.md))
+├── utils/               # Utilidades de validación y logging
 │
 ├── main.py              # Pipeline de integración de datos
 ├── requirements.txt     # Dependencias del proyecto
-├── README.md            # (Este archivo)
-└── docs/                # Documentación y presentaciones ([README](docs/README.md))
+├── README.md            # Este archivo
+└── docs/                # Documentación y presentaciones
 ```
 
 ---
@@ -77,7 +76,7 @@ Viajes-Economicos-Chaskiway/
 ## 🧑‍💻 Equipo de Desarrollo
 
 | Integrante | Usuario de GitHub | Rol en el Proyecto |
-| :--- | :--- | :--- |
+|:-----------|:------------------|:-------------------|
 | **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
 | **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
 | **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
@@ -88,14 +87,16 @@ Viajes-Economicos-Chaskiway/
 
 1. **RedBus:**  
    - Se utilizó la **API interna** identificada mediante inspección de red, permitiendo obtener datos estructurados de viajes (precios, horarios, empresas, asientos, ratings) de forma eficiente y robusta.
+
 2. **API de Clima (Open-Meteo):**  
    - Provee datos históricos y de pronóstico para cada destino, sin requerir autenticación.
+
 3. **API de Imágenes (SerpAPI):**  
    - Suministra imágenes representativas de alta calidad para cada destino usando Google Images.
 
 ---
 
-## 🚀 Ejecución paso a paso
+## 🚀 Ejecución Paso a Paso
 
 ### 1. Instala dependencias y configura el entorno
 
@@ -140,22 +141,25 @@ streamlit run frontend/app.py
 
 - **Integración de datos heterogéneos:**  
   Se normalizaron nombres y formatos para combinar fuentes distintas.
+
 - **Límites de APIs y manejo de claves:**  
   Se gestionaron claves con variables de entorno y manejo de errores.
+
 - **Scraping de RedBus:**  
   Se identificó y utilizó la API interna mediante inspección de red, evitando el scraping HTML tradicional.
+
 - **Colaboración y control de versiones:**  
   Se definió una estrategia de ramas y uso de Pull Requests para evitar conflictos.
 
 ---
 
-## 📸 Capturas de pantalla
+## 📸 Capturas de Pantalla
 
-_Agrega aquí imágenes del dashboard y del buscador para ilustrar la app._
+_Agrega aquí imágenes del dashboard y del buscador para ilustrar la aplicación._
 
 ---
 
-## 📄 Documentación adicional
+## 📄 Documentación Adicional
 
 - Cada carpeta principal y de scrapers incluye su propio `README.md` explicativo.
 - Consulta [`docs/API_KEYS.md`](docs/API_KEYS.md) para la gestión de claves.
