@@ -153,17 +153,11 @@ streamlit run frontend/app.py
 
 ---
 
-## 📸 Capturas de Pantalla
-
-_Agrega aquí imágenes del dashboard y del buscador para ilustrar la aplicación._
-
----
-
 ## 📄 Documentación Adicional
 
 - Cada carpeta principal y de scrapers incluye su propio `README.md` explicativo.
 - Consulta [`docs/API_KEYS.md`](docs/API_KEYS.md) para la gestión de claves.
-- Presentación final disponible en [`docs/presentacion_final.pptx`](docs/presentacion_final.pptx).
+- Detalles cooperativos y colectivos del trabajo en [`Informe_Colaborativo.ipynb`](Informe_Colaborativo.ipynb).
 
 ---
 
