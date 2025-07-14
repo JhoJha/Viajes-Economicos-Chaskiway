@@ -78,7 +78,7 @@ Viajes-Economicos-Chaskiway/
 | Integrante | Usuario de GitHub | Rol en el Proyecto |
 |:-----------|:------------------|:-------------------|
 | **Jhon Jhayro Villegas Verde** | `JhoJha` | Backend, Scraper de RedBus y Base de Datos |
-| **Jonnathan Jesús Pedraza Laboriano** | `[UsuarioGitHubDeJonnathan]` | Backend, Scraper de Imágenes y Frontend |
+| **Jonnathan Jesús Pedraza Laboriano** | `jonnathan2023` | Backend, Scraper de Imágenes y Frontend |
 | **David Ojeda Valdiviezo** | `20210842` | Backend, Scraper de Clima y Dashboard |
 
 ---
@@ -169,4 +169,4 @@ _Agrega aquí imágenes del dashboard y del buscador para ilustrar la aplicació
 
 ## 📬 Contacto
 
-Para más información, contactar a: `20231515@lamolina.edu.pe`
+Para más información, contactar a: `20231515@lamolina.edu.pe`, `20231505@lamolina.edu.pe`, `20210842@lamolina.edu.pe`
