@@ -14,6 +14,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 from datetime import datetime, timedelta
+import io
 
 # Función compartida para cargar datos
 from frontend.data_loader import load_data
@@ -106,6 +107,13 @@ st.markdown("""
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+
+.stMetric {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -116,39 +124,83 @@ st.markdown("""
 @st.cache_data
 def get_dashboard_data():
     """Carga y prepara los datos para el dashboard."""
-    df = load_data()
-    if df.empty:
+    try:
+        df = load_data()
+        if df is None or df.empty:
+            st.warning("⚠️ No se encontraron datos en la base de datos.")
+            return None, None, None, None, None
+        
+        # Validar columnas necesarias
+        required_columns = ['precio_min', 'destino', 'empresa', 'fecha_viaje']
+        missing_columns = [col for col in required_columns if col not in df.columns]
+        if missing_columns:
+            st.error(f"❌ Columnas faltantes en los datos: {missing_columns}")
+            return None, None, None, None, None
+        
+        # Limpiar datos
+        df_clean = df.dropna(subset=['precio_min', 'destino'])
+        
+        # Convertir fecha_viaje a datetime
+        df_clean['fecha_viaje'] = pd.to_datetime(df_clean['fecha_viaje'], errors='coerce')
+        df_clean = df_clean.dropna(subset=['fecha_viaje'])
+        
+        # Validar que los precios sean numéricos y positivos
+        df_clean['precio_min'] = pd.to_numeric(df_clean['precio_min'], errors='coerce')
+        df_clean = df_clean[df_clean['precio_min'] > 0]
+        
+        if df_clean.empty:
+            st.warning("⚠️ No hay datos válidos después de la limpieza.")
+            return None, None, None, None, None
+        
+        # Estadísticas por destino
+        destinos_stats = df_clean.groupby('destino').agg({
+            'precio_min': ['mean', 'min', 'max', 'count'],
+            'rating_empresa': 'mean' if 'rating_empresa' in df_clean.columns else None,
+            'asientos_disponibles': 'sum' if 'asientos_disponibles' in df_clean.columns else None
+        }).round(2)
+        
+        # Estadísticas por empresa
+        empresas_stats = df_clean.groupby('empresa').agg({
+            'precio_min': ['mean', 'min', 'max'],
+            'rating_empresa': 'mean' if 'rating_empresa' in df_clean.columns else None,
+            'destino': 'nunique'
+        }).round(2)
+        
+        # Análisis temporal
+        df_clean['mes'] = df_clean['fecha_viaje'].dt.month
+        df_clean['dia_semana'] = df_clean['fecha_viaje'].dt.day_name()
+        
+        # Análisis de clima (si existe la columna)
+        clima_stats = None
+        if 'categoria_clima' in df_clean.columns:
+            clima_stats = df_clean.groupby('categoria_clima').agg({
+                'precio_min': ['mean', 'count'],
+                'destino': 'nunique'
+            }).round(2)
+        
+        return df_clean, destinos_stats, empresas_stats, clima_stats, df
+        
+    except Exception as e:
+        st.error(f"❌ Error al cargar los datos: {str(e)}")
         return None, None, None, None, None
-    
-    # Datos básicos
-    df_clean = df.dropna(subset=['precio_min', 'destino'])
-    
-    # Estadísticas por destino
-    destinos_stats = df_clean.groupby('destino').agg({
-        'precio_min': ['mean', 'min', 'max', 'count'],
-        'rating_empresa': 'mean',
-        'asientos_disponibles': 'sum'
-    }).round(2)
-    
-    # Estadísticas por empresa
-    empresas_stats = df_clean.groupby('empresa').agg({
-        'precio_min': ['mean', 'min', 'max'],
-        'rating_empresa': 'mean',
-        'destino': 'nunique'
-    }).round(2)
-    
-    # Análisis temporal
-    df_clean['fecha_viaje'] = pd.to_datetime(df_clean['fecha_viaje'])
-    df_clean['mes'] = df_clean['fecha_viaje'].dt.month
-    df_clean['dia_semana'] = df_clean['fecha_viaje'].dt.day_name()
-    
-    # Análisis de clima
-    clima_stats = df_clean.groupby('categoria_clima').agg({
-        'precio_min': ['mean', 'count'],
-        'destino': 'nunique'
-    }).round(2)
-    
-    return df_clean, destinos_stats, empresas_stats, clima_stats, df
+
+def safe_mean(series):
+    """Calcula la media de manera segura."""
+    if series is None or series.empty:
+        return 0
+    return series.mean()
+
+def safe_count(series):
+    """Cuenta elementos de manera segura."""
+    if series is None or series.empty:
+        return 0
+    return len(series)
+
+def safe_nunique(series):
+    """Cuenta elementos únicos de manera segura."""
+    if series is None or series.empty:
+        return 0
+    return series.nunique()
 
 # =========================
 # CONTENIDO PRINCIPAL
@@ -163,9 +215,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Cargar datos
-df_clean, destinos_stats, empresas_stats, clima_stats, df_original = get_dashboard_data()
+with st.spinner("Cargando datos..."):
+    df_clean, destinos_stats, empresas_stats, clima_stats, df_original = get_dashboard_data()
 
-if df_clean is None:
+if df_clean is None or df_clean.empty:
     st.error("❌ No se pudieron cargar los datos. Verifica que la base de datos esté disponible.")
     st.stop()
 
@@ -174,245 +227,315 @@ if df_clean is None:
 # =========================
 st.markdown("### 🎛️ Filtros Interactivos")
 
-# Filtro por rango de fechas
-dates = pd.to_datetime(df_clean['fecha_viaje'])
-min_date, max_date = dates.min(), dates.max()
-fecha_inicio, fecha_fin = st.date_input(
-    "Selecciona el rango de fechas:",
-    value=(min_date, max_date),
-    min_value=min_date,
-    max_value=max_date,
-    format="DD/MM/YYYY"
-)
+col1, col2 = st.columns(2)
 
-# Filtro por destino
-destinos_opciones = ["Todos"] + sorted(df_clean['destino'].unique())
-destino_seleccionado = st.selectbox("Filtrar por destino:", destinos_opciones)
+with col1:
+    # Filtro por rango de fechas
+    dates = pd.to_datetime(df_clean['fecha_viaje'])
+    min_date, max_date = dates.min(), dates.max()
+    
+    # Convertir a objetos date para Streamlit
+    min_date_obj = min_date.date()
+    max_date_obj = max_date.date()
+    
+    fecha_range = st.date_input(
+        "Selecciona el rango de fechas:",
+        value=(min_date_obj, max_date_obj),
+        min_value=min_date_obj,
+        max_value=max_date_obj,
+        format="DD/MM/YYYY"
+    )
+
+with col2:
+    # Filtro por destino
+    destinos_opciones = ["Todos"] + sorted(df_clean['destino'].unique())
+    destino_seleccionado = st.selectbox("Filtrar por destino:", destinos_opciones)
+
+# Verificar que se seleccionaron dos fechas
+if len(fecha_range) == 2:
+    fecha_inicio, fecha_fin = fecha_range
+else:
+    fecha_inicio, fecha_fin = min_date_obj, max_date_obj
 
 # Aplicar filtros
 df_filtrado = df_clean[
     (df_clean['fecha_viaje'] >= pd.to_datetime(fecha_inicio)) &
     (df_clean['fecha_viaje'] <= pd.to_datetime(fecha_fin))
 ]
+
 if destino_seleccionado != "Todos":
     df_filtrado = df_filtrado[df_filtrado['destino'] == destino_seleccionado]
 
 # =========================
-# PALETA DE COLORES DE MARCA PARA PLOTLY
+# PALETA DE COLORES
 # =========================
 PLOTLY_COLORS = ["#FF6B35", "#F7931E", "#004E89", "#28a745", "#ffc107", "#17a2b8"]
 
 # =========================
-# MÉTRICAS PRINCIPALES (compactas)
+# MÉTRICAS PRINCIPALES
 # =========================
-st.markdown("""
-<div style="display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; margin-bottom:1.2rem;">
-""", unsafe_allow_html=True)
-for label, value, icon in [
-    ("Total de Viajes", f"{total_viajes:,}", "🧳"),
-    ("Destinos Únicos", destinos_unicos, "🗺️"),
-    ("Precio Promedio", f"S/ {precio_promedio:.0f}", "💰"),
-    ("Empresas", empresas_unicas, "🚌")
-]:
-    st.markdown(f"""
-    <div style='background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.07); padding:0.8rem 1.5rem; min-width:160px; text-align:center; border-left:5px solid #FF6B35; margin-bottom:0.5rem;'>
-        <div style='font-size:2rem; font-weight:700; color:#FF6B35; margin-bottom:0.2rem;'>{icon} {value}</div>
-        <div style='color:#6C757D; font-weight:500; font-size:1.05rem;'>{label}</div>
-    </div>
-    """, unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True)
-st.markdown("---")
 
-# =========================
-# GRÁFICO DE TENDENCIA DE PRECIOS (optimizado)
-# =========================
-if destino_seleccionado != "Todos":
-    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
-    st.markdown(f'<div class="chart-title">📈 Tendencia de Precios en {destino_seleccionado} a lo largo del tiempo</div>', unsafe_allow_html=True)
-    df_destino = df_filtrado[df_filtrado['destino'] == destino_seleccionado]
-    tendencia = df_destino.groupby('fecha_viaje')['precio_min'].mean().reset_index()
-    if len(tendencia) > 50:
-        st.line_chart(tendencia.set_index('fecha_viaje'))
-    else:
-        import plotly.express as px
-        fig_tendencia = px.line(
-            tendencia,
-            x='fecha_viaje',
-            y='precio_min',
-            title=f"Tendencia de Precios en {destino_seleccionado}",
-            labels={'fecha_viaje': 'Fecha', 'precio_min': 'Precio Promedio (S/)'},
-            color_discrete_sequence=PLOTLY_COLORS
+if not df_filtrado.empty:
+    # Calcular métricas
+    total_viajes = len(df_filtrado)
+    destinos_unicos = safe_nunique(df_filtrado['destino'])
+    precio_promedio = safe_mean(df_filtrado['precio_min'])
+    empresas_unicas = safe_nunique(df_filtrado['empresa'])
+    
+    # Mostrar métricas en columnas
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric(
+            label="🧳 Total de Viajes",
+            value=f"{total_viajes:,}",
+            delta=None
         )
-        fig_tendencia.update_layout(height=400)
-        st.plotly_chart(fig_tendencia, use_container_width=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+    
+    with col2:
+        st.metric(
+            label="🗺️ Destinos Únicos",
+            value=destinos_unicos,
+            delta=None
+        )
+    
+    with col3:
+        st.metric(
+            label="💰 Precio Promedio",
+            value=f"S/ {precio_promedio:.0f}",
+            delta=None
+        )
+    
+    with col4:
+        st.metric(
+            label="🚌 Empresas",
+            value=empresas_unicas,
+            delta=None
+        )
 
-# =========================
-# GRÁFICOS Y ANÁLISIS (top 10)
-# =========================
-# Gráfico 1: Precios por Destino (top 10)
-destinos_top = df_filtrado['destino'].value_counts().head(10).index.tolist()
-df_top_destinos = df_filtrado[df_filtrado['destino'].isin(destinos_top)]
-fig_precios = px.box(
-    df_top_destinos,
-    x='destino',
-    y='precio_min',
-    title="Distribución de Precios por Destino (Top 10)",
-    labels={'precio_min': 'Precio (S/)', 'destino': 'Destino'},
-    color='destino',
-    color_discrete_sequence=PLOTLY_COLORS
-)
-fig_precios.update_layout(height=400, showlegend=False)
-st.plotly_chart(fig_precios, use_container_width=True)
+    st.markdown("---")
 
-# Gráfico 2: Rating de Empresas (top 10)
-empresas_top = df_filtrado['empresa'].value_counts().head(10).index.tolist()
-empresas_con_rating = df_filtrado[df_filtrado['empresa'].isin(empresas_top)].groupby('empresa')['rating_empresa'].agg(['mean', 'count']).reset_index()
-empresas_con_rating = empresas_con_rating[empresas_con_rating['count'] >= 3]
-if not empresas_con_rating.empty:
-    fig_rating = px.bar(
-        empresas_con_rating.sort_values(by='mean', ascending=True),
-        x='mean',
-        y='empresa',
-        title="Rating Promedio por Empresa (Top 10)",
-        labels={'mean': 'Rating Promedio', 'empresa': 'Empresa'},
-        orientation='h',
-        color_discrete_sequence=PLOTLY_COLORS
+    # =========================
+    # GRÁFICOS Y ANÁLISIS
+    # =========================
+
+    # Gráfico de tendencia de precios
+    if destino_seleccionado != "Todos":
+        st.markdown("#### 📈 Tendencia de Precios")
+        df_tendencia = df_filtrado.groupby('fecha_viaje')['precio_min'].mean().reset_index()
+        
+        if len(df_tendencia) > 1:
+            fig_tendencia = px.line(
+                df_tendencia,
+                x='fecha_viaje',
+                y='precio_min',
+                title=f"Tendencia de Precios en {destino_seleccionado}",
+                labels={'fecha_viaje': 'Fecha', 'precio_min': 'Precio Promedio (S/)'},
+                color_discrete_sequence=PLOTLY_COLORS
+            )
+            fig_tendencia.update_layout(height=400)
+            st.plotly_chart(fig_tendencia, use_container_width=True)
+        else:
+            st.info("📊 No hay suficientes datos para mostrar la tendencia de precios.")
+
+    # Crear dos columnas para los gráficos
+    col1, col2 = st.columns(2)
+
+    with col1:
+        # Gráfico de precios por destino
+        st.markdown("#### 💰 Precios por Destino")
+        destinos_top = df_filtrado['destino'].value_counts().head(10).index.tolist()
+        df_top_destinos = df_filtrado[df_filtrado['destino'].isin(destinos_top)]
+        
+        if not df_top_destinos.empty:
+            fig_precios = px.box(
+                df_top_destinos,
+                x='destino',
+                y='precio_min',
+                title="Distribución de Precios por Destino (Top 10)",
+                labels={'precio_min': 'Precio (S/)', 'destino': 'Destino'},
+                color='destino',
+                color_discrete_sequence=PLOTLY_COLORS
+            )
+            fig_precios.update_layout(height=400, showlegend=False)
+            fig_precios.update_xaxes(tickangle=45)
+            st.plotly_chart(fig_precios, use_container_width=True)
+
+    with col2:
+        # Gráfico de rating de empresas
+        st.markdown("#### ⭐ Rating de Empresas")
+        if 'rating_empresa' in df_filtrado.columns:
+            empresas_top = df_filtrado['empresa'].value_counts().head(10).index.tolist()
+            empresas_rating = df_filtrado[df_filtrado['empresa'].isin(empresas_top)]
+            empresas_rating = empresas_rating.groupby('empresa')['rating_empresa'].agg(['mean', 'count']).reset_index()
+            empresas_rating = empresas_rating[empresas_rating['count'] >= 3]
+            
+            if not empresas_rating.empty:
+                empresas_sorted = empresas_rating.sort_values(by='mean', ascending=True)
+                fig_rating = px.bar(
+                    empresas_sorted,
+                    x='mean',
+                    y='empresa',
+                    title="Rating Promedio por Empresa (Top 10)",
+                    labels={'mean': 'Rating Promedio', 'empresa': 'Empresa'},
+                    orientation='h',
+                    color_discrete_sequence=PLOTLY_COLORS
+                )
+                fig_rating.update_layout(height=400)
+                st.plotly_chart(fig_rating, use_container_width=True)
+            else:
+                st.info("📊 No hay suficientes datos de rating para mostrar.")
+        else:
+            st.info("📊 No hay datos de rating disponibles.")
+
+    # Análisis de clima y asientos disponibles
+    col3, col4 = st.columns(2)
+
+    with col3:
+        # Análisis de clima
+        if 'categoria_clima' in df_filtrado.columns:
+            st.markdown("#### 🌡️ Análisis por Clima")
+            clima_data = df_filtrado.groupby('categoria_clima').agg({
+                'precio_min': 'mean',
+                'destino': 'count'
+            }).reset_index()
+            clima_data.columns = ['Clima', 'Precio Promedio', 'Cantidad Viajes']
+            
+            if not clima_data.empty:
+                fig_clima = px.bar(
+                    clima_data,
+                    x='Clima',
+                    y='Precio Promedio',
+                    title="Precio Promedio por Clima",
+                    color_discrete_sequence=PLOTLY_COLORS
+                )
+                fig_clima.update_layout(height=400)
+                st.plotly_chart(fig_clima, use_container_width=True)
+        else:
+            st.info("🌡️ No hay datos de clima disponibles.")
+
+    with col4:
+        # Disponibilidad de asientos
+        if 'asientos_disponibles' in df_filtrado.columns:
+            st.markdown("#### 💺 Asientos Disponibles")
+            asientos_data = df_filtrado.groupby('destino')['asientos_disponibles'].sum().reset_index()
+            asientos_top = asientos_data.nlargest(10, 'asientos_disponibles')
+            
+            if not asientos_top.empty:
+                fig_asientos = px.bar(
+                    asientos_top,
+                    x='asientos_disponibles',
+                    y='destino',
+                    title="Asientos Disponibles por Destino",
+                    labels={'asientos_disponibles': 'Asientos', 'destino': 'Destino'},
+                    orientation='h',
+                    color_discrete_sequence=PLOTLY_COLORS
+                )
+                fig_asientos.update_layout(height=400)
+                st.plotly_chart(fig_asientos, use_container_width=True)
+        else:
+            st.info("💺 No hay datos de asientos disponibles.")
+
+    # =========================
+    # TABLAS DETALLADAS
+    # =========================
+
+    st.markdown("### 📋 Datos Detallados")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        # Tabla de destinos más populares
+        st.markdown("#### 🏛️ Destinos Más Populares")
+        destinos_populares = df_filtrado['destino'].value_counts().head(10).reset_index()
+        destinos_populares.columns = ['Destino', 'Cantidad de Viajes']
+        st.dataframe(destinos_populares, use_container_width=True, height=300)
+
+    with col2:
+        # Tabla de empresas con mejores precios
+        st.markdown("#### 💰 Empresas con Mejores Precios")
+        empresas_precios = df_filtrado.groupby('empresa')['precio_min'].mean().reset_index()
+        empresas_precios.columns = ['Empresa', 'Precio Promedio (S/)']
+        empresas_precios['Precio Promedio (S/)'] = empresas_precios['Precio Promedio (S/)'].round(2)
+        empresas_precios = empresas_precios.sort_values('Precio Promedio (S/)').head(10)
+        st.dataframe(empresas_precios, use_container_width=True, height=300)
+
+    # Botón para descargar datos
+    st.markdown("#### 📥 Exportar Datos")
+    csv_buffer = io.StringIO()
+    df_filtrado.to_csv(csv_buffer, index=False)
+    st.download_button(
+        label="⬇️ Descargar datos filtrados como CSV",
+        data=csv_buffer.getvalue(),
+        file_name=f"chaskiway_datos_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+        mime="text/csv"
     )
-    fig_rating.update_layout(height=350)
-    st.plotly_chart(fig_rating, use_container_width=True)
+
+    # =========================
+    # INSIGHTS Y RECOMENDACIONES
+    # =========================
+
+    st.markdown("### 💡 Insights y Recomendaciones")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("#### 🎯 Mejores Oportunidades")
+        
+        try:
+            # Destino más económico
+            destino_economico = df_filtrado.groupby('destino')['precio_min'].mean().idxmin()
+            precio_minimo = df_filtrado.groupby('destino')['precio_min'].mean().min()
+            
+            st.success(f"""
+            **Destino más económico:** {destino_economico}  
+            **Precio promedio:** S/ {precio_minimo:.0f}
+            """)
+            
+            # Empresa más económica
+            empresa_economica = df_filtrado.groupby('empresa')['precio_min'].mean().idxmin()
+            precio_empresa_min = df_filtrado.groupby('empresa')['precio_min'].mean().min()
+            
+            st.success(f"""
+            **Empresa más económica:** {empresa_economica}  
+            **Precio promedio:** S/ {precio_empresa_min:.0f}
+            """)
+        except Exception as e:
+            st.error(f"Error al calcular insights: {str(e)}")
+
+    with col2:
+        st.markdown("#### ⚠️ Consideraciones")
+        
+        try:
+            # Destino más caro
+            destino_caro = df_filtrado.groupby('destino')['precio_min'].mean().idxmax()
+            precio_maximo = df_filtrado.groupby('destino')['precio_min'].mean().max()
+            
+            st.warning(f"""
+            **Destino más costoso:** {destino_caro}  
+            **Precio promedio:** S/ {precio_maximo:.0f}
+            """)
+            
+            # Destino con menos opciones
+            destinos_menos_opciones = df_filtrado['destino'].value_counts().tail(3)
+            if not destinos_menos_opciones.empty:
+                st.info(f"""
+                **Destinos con menos opciones:**  
+                {', '.join(destinos_menos_opciones.index.tolist())}
+                """)
+        except Exception as e:
+            st.error(f"Error al calcular consideraciones: {str(e)}")
+
 else:
-    st.info("📊 No hay suficientes datos de rating para mostrar el gráfico.")
-
-# Gráfico 3: Análisis de Clima (top 3)
-if 'categoria_clima' in df_filtrado.columns:
-    climas_top = df_filtrado['categoria_clima'].value_counts().head(3).index.tolist()
-    clima_analysis = df_filtrado[df_filtrado['categoria_clima'].isin(climas_top)].groupby('categoria_clima').agg({
-        'precio_min': ['mean', 'count'],
-        'destino': 'nunique'
-    }).round(2)
-    import plotly.graph_objects as go
-    from plotly.subplots import make_subplots
-    fig_clima = make_subplots(
-        rows=1, cols=2,
-        subplot_titles=('Precio Promedio por Clima', 'Cantidad de Viajes por Clima'),
-        specs=[[{"type": "bar"}, {"type": "bar"}]]
-    )
-    fig_clima.add_trace(
-        go.Bar(x=clima_analysis.index, y=clima_analysis[('precio_min', 'mean')], name="Precio Promedio", marker_color=PLOTLY_COLORS[0]),
-        row=1, col=1
-    )
-    fig_clima.add_trace(
-        go.Bar(x=clima_analysis.index, y=clima_analysis[('precio_min', 'count')], name="Cantidad de Viajes", marker_color=PLOTLY_COLORS[1]),
-        row=1, col=2
-    )
-    fig_clima.update_layout(height=350, showlegend=False)
-    st.plotly_chart(fig_clima, use_container_width=True)
-else:
-    st.info("🌡️ No hay datos de clima disponibles para el análisis.")
-
-# Gráfico 4: Disponibilidad de Asientos (top 10)
-asientos_por_destino = df_filtrado.groupby('destino')['asientos_disponibles'].sum().reset_index()
-asientos_top = asientos_por_destino.sort_values(by='asientos_disponibles', ascending=False).head(10)
-import plotly.express as px
-fig_asientos = px.bar(
-    asientos_top,
-    x='asientos_disponibles',
-    y='destino',
-    title="Total de Asientos Disponibles por Destino (Top 10)",
-    labels={'asientos_disponibles': 'Asientos Disponibles', 'destino': 'Destino'},
-    orientation='h',
-    color_discrete_sequence=PLOTLY_COLORS
-)
-fig_asientos.update_layout(height=350)
-st.plotly_chart(fig_asientos, use_container_width=True)
-
-# =========================
-# TABLAS DETALLADAS
-# =========================
-
-st.markdown("### 📋 Datos Detallados")
-
-# Tabla de destinos más populares
-st.markdown("#### 🏛️ Destinos Más Populares")
-destinos_populares = df_filtrado['destino'].value_counts().head(10).reset_index()
-destinos_populares.columns = ['Destino', 'Cantidad de Viajes']
-st.dataframe(destinos_populares, use_container_width=True)
-
-# Tabla de empresas con mejores precios
-st.markdown("#### 💰 Empresas con Mejores Precios")
-mejores_empresas = df_filtrado.groupby('empresa')['precio_min'].mean().sort_values().head(10).reset_index()
-mejores_empresas.columns = ['Empresa', 'Precio Promedio (S/)']
-mejores_empresas['Precio Promedio (S/)'] = mejores_empresas['Precio Promedio (S/)'].round(2)
-st.dataframe(mejores_empresas, use_container_width=True)
-
-# =========================
-# TABLA DE DESTINOS POPULARES + EXPORTAR CSV
-# =========================
-import io
-csv_buffer = io.StringIO()
-destinos_populares.to_csv(csv_buffer, index=False)
-st.download_button(
-    label="⬇️ Descargar tabla como CSV",
-    data=csv_buffer.getvalue(),
-    file_name="destinos_populares.csv",
-    mime="text/csv"
-)
-
-# =========================
-# INSIGHTS Y RECOMENDACIONES
-# =========================
-
-st.markdown("### 💡 Insights y Recomendaciones")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.markdown("#### 🎯 Mejores Oportunidades")
-    
-    # Destino más económico
-    destino_mas_economico = df_filtrado.groupby('destino')['precio_min'].mean().idxmin()
-    precio_minimo = df_filtrado.groupby('destino')['precio_min'].mean().min()
-    
-    st.info(f"""
-    **Destino más económico:** {destino_mas_economico}
-    **Precio promedio:** S/ {precio_minimo:.0f}
-    """)
-    
-    # Empresa más económica
-    empresa_mas_economica = df_filtrado.groupby('empresa')['precio_min'].mean().idxmin()
-    precio_empresa_min = df_filtrado.groupby('empresa')['precio_min'].mean().min()
-    
-    st.info(f"""
-    **Empresa más económica:** {empresa_mas_economica}
-    **Precio promedio:** S/ {precio_empresa_min:.0f}
-    """)
-
-with col2:
-    st.markdown("#### ⚠️ Consideraciones")
-    
-    # Destino más caro
-    destino_mas_caro = df_filtrado.groupby('destino')['precio_min'].mean().idxmax()
-    precio_maximo = df_filtrado.groupby('destino')['precio_min'].mean().max()
-    
-    st.warning(f"""
-    **Destino más costoso:** {destino_mas_caro}
-    **Precio promedio:** S/ {precio_maximo:.0f}
-    """)
-    
-    # Destino con menos opciones
-    destinos_con_menos_opciones = df_filtrado['destino'].value_counts().tail(3)
-    st.warning(f"""
-    **Destinos con menos opciones:**
-    {', '.join(str(x) for x in destinos_con_menos_opciones.index.tolist())}
-    """)
+    st.warning("⚠️ No hay datos disponibles para los filtros seleccionados.")
+    st.info("Intenta ajustar los filtros para obtener resultados.")
 
 # =========================
 # FOOTER
 # =========================
 
 st.markdown("---")
-st.markdown("""
+st.markdown(f"""
 <div style="text-align: center; color: #6C757D; font-size: 0.9rem;">
     📊 Dashboard generado automáticamente | Última actualización: {datetime.now().strftime('%d/%m/%Y %H:%M')}
 </div>
