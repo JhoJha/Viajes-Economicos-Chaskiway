@@ -1,5 +1,9 @@
 # 🚌 Chaskiway: Recomendador de Viajes Económicos por el Perú
 
+> A collaborative data project that recommends cheap intercity bus trips from Lima by combining scraped RedBus fares, Open-Meteo weather and destination images into a SQLite database and a Streamlit dashboard.
+
+**Estado:** Finalizado (proyecto de curso, jul-2025). Los datos incluidos son de julio de 2025.
+
 **Chaskiway** es una aplicación web colaborativa desarrollada para el curso de Lenguaje de Programación 2. Su objetivo es ayudar a los usuarios a planificar viajes interprovinciales desde Lima, recomendando las mejores opciones según presupuesto, clima y calidad del servicio, integrando datos de múltiples fuentes reales.
 
 ---
@@ -137,6 +141,29 @@ streamlit run frontend/app.py
 
 ---
 
+## Estado actual (revisión oct-2026)
+
+**Qué funciona hoy**
+
+- `pip install -r requirements.txt` instala todo en Python 3.11.
+- `streamlit run frontend/app.py` levanta la app con la base incluida (`data/processed/viajes_grupales.db`, 2.536 viajes combinados). La página principal y el **Dashboard** renderizan sin errores.
+
+**Qué no funciona / quedó pendiente**
+
+- **El Buscador aparece vacío.** Oculta las fechas de viaje pasadas y todos los datos son de julio de 2025, así que hoy muestra "No se encontraron datos". Para refrescarlo hay que volver a correr los scrapers y `main.py`.
+- **Los scrapers no se verificaron en esta revisión.** El de RedBus depende de una API interna no documentada que puede haber cambiado, y el de imágenes requiere una clave propia de SerpAPI en `.env`.
+- No hay tests automatizados.
+- Usar una API interna de RedBus fue una decisión académica: para un uso real habría que revisar sus términos de servicio.
+
+**Qué aprendí**
+
+- Integrar fuentes heterogéneas (API interna, API pública y búsqueda de imágenes) exige normalizar nombres y formatos antes de combinarlas.
+- Inspeccionar el tráfico de red para encontrar la API detrás de una web es más robusto que parsear HTML, pero te ata a un contrato que nadie te garantiza.
+- Las claves de API van en variables de entorno desde el primer commit: una clave que llega al historial queda expuesta aunque después se borre.
+- Trabajar en equipo con ramas por componente (scrapers, dashboard, frontend) y Pull Requests evitó conflictos en un proyecto de tres personas.
+
+---
+
 ## 🛠️ Dificultades Encontradas y Soluciones
 
 - **Integración de datos heterogéneos:**  
@@ -163,4 +190,4 @@ streamlit run frontend/app.py
 
 ## 📬 Contacto
 
-Para más información, contactar a: `20231515@lamolina.edu.pe`, `20231505@lamolina.edu.pe`, `20210842@lamolina.edu.pe`
+Para más información, contacta al equipo a través de sus perfiles de GitHub (ver [Equipo de Desarrollo](#-equipo-de-desarrollo)).
