@@ -115,7 +115,7 @@ pip install -r requirements.txt
 ### 2. Configura las API keys
 
 - Crea un archivo `.env` siguiendo el ejemplo en [`docs/API_KEYS.md`](docs/API_KEYS.md).
-- Solo es necesaria la key de SerpAPI para imágenes.
+- Solo es necesaria la key de SerpAPI para imágenes, y únicamente si vas a volver a ejecutar el scraper de imágenes: para levantar la app con los datos incluidos no se necesita ninguna key.
 
 ### 3. Ejecuta los scrapers
 
@@ -147,6 +147,7 @@ streamlit run frontend/app.py
 
 - `pip install -r requirements.txt` instala todo en Python 3.11.
 - `streamlit run frontend/app.py` levanta la app con la base incluida (`data/processed/viajes_grupales.db`, 2.536 viajes combinados). La página principal y el **Dashboard** renderizan sin errores.
+- **Las imágenes no requieren ninguna API key para usar la app.** Los enlaces a las imágenes de los 6 destinos ya están guardados en `data/raw/imagenes/enlaces_imagenes.csv` e integrados en la base de datos. SerpAPI solo se necesita si quieres volver a buscarlas con `backend/scraping/imagenes/scraper.py`, usando tu propia clave en `.env`.
 
 **Qué no funciona / quedó pendiente**
 
